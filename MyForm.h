@@ -1,4 +1,3 @@
-п»ї#pragma once
 #include <math.h>
 
 namespace Graph {
@@ -10,6 +9,8 @@ namespace Graph {
 	using namespace System::Data;
 	using namespace System::Drawing;
 	using namespace ZedGraph;
+	
+//using namespace ZedGraph;
 
 	/// <summary>
 	/// Summary for MyForm
@@ -85,6 +86,15 @@ namespace Graph {
 	private: System::Windows::Forms::CheckBox^ checkBox2;
 	private: System::Windows::Forms::TextBox^ textBox12;
 
+		   // Добавленные элементы для задачи 2
+	private: System::Windows::Forms::Panel^ panelTask2;
+	private: System::Windows::Forms::Label^ label13;
+	private: System::Windows::Forms::TextBox^ textBoxA;
+	private: System::Windows::Forms::Label^ label14;
+	private: System::Windows::Forms::TextBox^ textBoxB;
+	private: System::Windows::Forms::Label^ label15;
+	private: System::Windows::Forms::ComboBox^ comboBoxGraphType;
+
 
 
 
@@ -101,10 +111,10 @@ namespace Graph {
 
 
 #pragma region Windows Form Designer generated code
-		/// <summary>
-		/// Required method for Designer support - do not modify
-		/// the contents of this method with the code editor.
-		/// </summary>
+	/// <summary>
+	/// Required method for Designer support - do not modify
+	/// the contents of this method with the code editor.
+	/// </summary>
 		void InitializeComponent(void)
 		{
 			this->components = (gcnew System::ComponentModel::Container());
@@ -148,10 +158,18 @@ namespace Graph {
 			this->textBox11 = (gcnew System::Windows::Forms::TextBox());
 			this->label11 = (gcnew System::Windows::Forms::Label());
 			this->checkBox1 = (gcnew System::Windows::Forms::CheckBox());
+			this->comboBoxGraphType = (gcnew System::Windows::Forms::ComboBox());
 			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->checkBox2 = (gcnew System::Windows::Forms::CheckBox());
+			this->textBoxB = (gcnew System::Windows::Forms::TextBox());
+			this->panelTask2 = (gcnew System::Windows::Forms::Panel());
+			this->label15 = (gcnew System::Windows::Forms::Label());
+			this->label14 = (gcnew System::Windows::Forms::Label());
+			this->textBoxA = (gcnew System::Windows::Forms::TextBox());
+			this->label13 = (gcnew System::Windows::Forms::Label());
 			this->textBox12 = (gcnew System::Windows::Forms::TextBox());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
+			this->panelTask2->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// button1
@@ -460,7 +478,7 @@ namespace Graph {
 			this->textBox8->Name = L"textBox8";
 			this->textBox8->Size = System::Drawing::Size(80, 22);
 			this->textBox8->TabIndex = 26;
-			this->textBox8->Text = L"1e-1";
+			this->textBox8->Text = L"1e-4";
 			// 
 			// label8
 			// 
@@ -498,7 +516,7 @@ namespace Graph {
 			this->textBox10->Name = L"textBox10";
 			this->textBox10->Size = System::Drawing::Size(80, 22);
 			this->textBox10->TabIndex = 32;
-			this->textBox10->Text = L"0";
+			this->textBox10->Text = L"1";
 			// 
 			// label10
 			// 
@@ -517,7 +535,7 @@ namespace Graph {
 			this->textBox11->Name = L"textBox11";
 			this->textBox11->Size = System::Drawing::Size(80, 22);
 			this->textBox11->TabIndex = 30;
-			this->textBox11->Text = L"20";
+			this->textBox11->Text = L"1";
 			// 
 			// label11
 			// 
@@ -538,7 +556,16 @@ namespace Graph {
 			this->checkBox1->TabIndex = 33;
 			this->checkBox1->Text = L"OLP";
 			this->checkBox1->UseVisualStyleBackColor = true;
-			this->checkBox1->CheckedChanged += gcnew System::EventHandler(this, &MyForm::checkBox1_CheckedChanged);
+			// 
+			// comboBoxGraphType
+			// 
+			this->comboBoxGraphType->FormattingEnabled = true;
+			this->comboBoxGraphType->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"(x, u1(x))", L"(x, u2(x))", L"(u1(x), u2(x))" });
+			this->comboBoxGraphType->Location = System::Drawing::Point(120, 100);
+			this->comboBoxGraphType->Name = L"comboBoxGraphType";
+			this->comboBoxGraphType->Size = System::Drawing::Size(200, 24);
+			this->comboBoxGraphType->TabIndex = 42;
+			this->comboBoxGraphType->Text = L"(x, u1(x))";
 			// 
 			// button3
 			// 
@@ -560,7 +587,69 @@ namespace Graph {
 			this->checkBox2->TabIndex = 35;
 			this->checkBox2->Text = L"draw exact solution";
 			this->checkBox2->UseVisualStyleBackColor = true;
-			this->checkBox2->CheckedChanged += gcnew System::EventHandler(this, &MyForm::checkBox2_CheckedChanged);
+			// 
+			// textBoxB
+			// 
+			this->textBoxB->Location = System::Drawing::Point(120, 60);
+			this->textBoxB->Margin = System::Windows::Forms::Padding(4);
+			this->textBoxB->Name = L"textBoxB";
+			this->textBoxB->Size = System::Drawing::Size(200, 22);
+			this->textBoxB->TabIndex = 40;
+			this->textBoxB->Text = L"2";
+			// 
+			// panelTask2
+			// 
+			this->panelTask2->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
+			this->panelTask2->Controls->Add(this->comboBoxGraphType);
+			this->panelTask2->Controls->Add(this->label15);
+			this->panelTask2->Controls->Add(this->textBoxB);
+			this->panelTask2->Controls->Add(this->label14);
+			this->panelTask2->Controls->Add(this->textBoxA);
+			this->panelTask2->Controls->Add(this->label13);
+			this->panelTask2->Location = System::Drawing::Point(1323, 448);
+			this->panelTask2->Name = L"panelTask2";
+			this->panelTask2->Size = System::Drawing::Size(437, 150);
+			this->panelTask2->TabIndex = 37;
+			this->panelTask2->Visible = false;
+			// 
+			// label15
+			// 
+			this->label15->AutoSize = true;
+			this->label15->Location = System::Drawing::Point(20, 103);
+			this->label15->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label15->Name = L"label15";
+			this->label15->Size = System::Drawing::Size(79, 16);
+			this->label15->TabIndex = 41;
+			this->label15->Text = L"Graph Type";
+			// 
+			// label14
+			// 
+			this->label14->AutoSize = true;
+			this->label14->Location = System::Drawing::Point(20, 63);
+			this->label14->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label14->Name = L"label14";
+			this->label14->Size = System::Drawing::Size(15, 16);
+			this->label14->TabIndex = 39;
+			this->label14->Text = L"b";
+			// 
+			// textBoxA
+			// 
+			this->textBoxA->Location = System::Drawing::Point(120, 20);
+			this->textBoxA->Margin = System::Windows::Forms::Padding(4);
+			this->textBoxA->Name = L"textBoxA";
+			this->textBoxA->Size = System::Drawing::Size(200, 22);
+			this->textBoxA->TabIndex = 38;
+			this->textBoxA->Text = L"1";
+			// 
+			// label13
+			// 
+			this->label13->AutoSize = true;
+			this->label13->Location = System::Drawing::Point(20, 23);
+			this->label13->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label13->Name = L"label13";
+			this->label13->Size = System::Drawing::Size(15, 16);
+			this->label13->TabIndex = 37;
+			this->label13->Text = L"a";
 			// 
 			// textBox12
 			// 
@@ -579,7 +668,7 @@ namespace Graph {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(1772, 614);
+			this->ClientSize = System::Drawing::Size(1774, 614);
 			this->Controls->Add(this->textBox12);
 			this->Controls->Add(this->checkBox2);
 			this->Controls->Add(this->button3);
@@ -613,36 +702,169 @@ namespace Graph {
 			this->Controls->Add(this->dataGridView1);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->zedGraphControl1);
+			this->Controls->Add(this->panelTask2);
 			this->Margin = System::Windows::Forms::Padding(4);
 			this->Name = L"MyForm";
 			this->Text = L"Lab_1";
-			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
+			this->panelTask2->ResumeLayout(false);
+			this->panelTask2->PerformLayout();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
 		}
 #pragma endregion
+
 	private:
-		double f(double x, double u)
+
+		void BuildMain2Graphs()
+		{
+			GraphPane^ panel = zedGraphControl1->GraphPane;
+			panel->CurveList->Clear();
+
+			if (!radioButton3->Checked) return;
+
+			String^ selectedGraph = comboBoxGraphType->Text;
+			double a_param = Convert::ToDouble(textBoxA->Text);
+			double b_param = Convert::ToDouble(textBoxB->Text);
+
+			PointPairList^ graphList = gcnew PointPairList();
+
+			for (int i = 0; i < dataGridView1->Rows->Count; i++)
+			{
+				if (dataGridView1->Rows[i]->Cells[0] != nullptr &&
+					dataGridView1->Rows[i]->Cells[1] != nullptr &&
+					dataGridView1->Rows[i]->Cells[2] != nullptr)
+				{
+					double x = Convert::ToDouble(dataGridView1->Rows[i]->Cells[0]->Value);
+					double u1 = Convert::ToDouble(dataGridView1->Rows[i]->Cells[1]->Value);  // u(x)
+					double u2 = Convert::ToDouble(dataGridView1->Rows[i]->Cells[2]->Value);  // u'(x)
+
+					if (selectedGraph == "(x, u1(x))")
+					{
+						graphList->Add(x, u1);
+						panel->XAxis->Title->Text = "x";
+						panel->YAxis->Title->Text = "u1(x)";
+					}
+					else if (selectedGraph == "(x, u2(x))")
+					{
+						graphList->Add(x, u2);
+						panel->XAxis->Title->Text = "x";
+						panel->YAxis->Title->Text = "u2(x)";
+					}
+					else if (selectedGraph == "(u1(x), u2(x))")
+					{
+						graphList->Add(u1, u2);
+						panel->XAxis->Title->Text = "u1(x)";
+						panel->YAxis->Title->Text = "u2(x)";
+					}
+				}
+			}
+
+			if (graphList->Count > 0)
+			{
+				String^ curveTitle = String::Format("Main Task 2 (a={0}, b={1}) - {2}",
+					a_param, b_param, selectedGraph);
+				LineItem^ curve = panel->AddCurve(curveTitle, graphList, Color::Blue, SymbolType::None);
+				curve->Line->Width = 2.0f;
+
+				if (selectedGraph == "(u1(x), u2(x))")
+				{
+					panel->Title->Text = "Phase Portrait: u1(x) vs u2(x)";
+				}
+				else
+				{
+					panel->Title->Text = "Main Task 2: " + selectedGraph;
+				}
+
+				zedGraphControl1->AxisChange();
+				zedGraphControl1->Invalidate();
+			}
+		}
+		// Тестовая задача
+		double f_test(double x, double u)
 		{
 			return -3.0 / 2.0 * u;
 		}
 
-		double u(double x, double c)
+		double u_test(double x, double c)
 		{
 			double u1 = c * exp((-3.0 / 2.0) * x);
 			return u1;
 		}
-		double RK4(double x, double u, double h)
+
+		// Основная задача №1 для варианта 3
+		double f_main1(double x)
+		{
+			// f(x) = 1/(1+x^2)^(1/3) для варианта 3
+			return 1.0 / pow(1.0 + x * x, 1.0 / 3.0);
+		}
+
+		double f_main1_derivative(double x, double u)
+		{
+			// du/dx = f(x)u^2 + u - u^3 sin(10x)
+			return f_main1(x) * u * u + u - u * u * u * sin(10 * x);
+		}
+
+		// Метод Рунге-Кутта 4-го порядка для основной задачи №1
+		double RK4_main1(double x, double u, double h)
 		{
 			double v = u;
-			double k1 = h * f(x, v);
-			double k2 = h * f(x + h / 2, v + k1 / 2);
-			double k3 = h * f(x + h / 2, v + k2 / 2);
-			double k4 = h * f(x + h, v + k3);
+			double k1 = h * f_main1_derivative(x, v);
+			double k2 = h * f_main1_derivative(x + h / 2, v + k1 / 2);
+			double k3 = h * f_main1_derivative(x + h / 2, v + k2 / 2);
+			double k4 = h * f_main1_derivative(x + h, v + k3);
 
 			return v + (k1 + 2 * k2 + 2 * k3 + k4) / 6;
+		}
+
+		// Метод Рунге-Кутта для тестовой задачи
+		double RK4_test(double x, double u, double h)
+		{
+			double v = u;
+			double k1 = h * f_test(x, v);
+			double k2 = h * f_test(x + h / 2, v + k1 / 2);
+			double k3 = h * f_test(x + h / 2, v + k2 / 2);
+			double k4 = h * f_test(x + h, v + k3);
+
+			return v + (k1 + 2 * k2 + 2 * k3 + k4) / 6;
+		}
+		// Метод Рунге-Кутта для системы уравнений Основной задачи №2
+		void RK4_main2_system(double x, double% y1, double% y2, double h, double a, double b)
+		{
+			double k1_y1, k1_y2, k2_y1, k2_y2, k3_y1, k3_y2, k4_y1, k4_y2;
+			double f1, f2;
+
+			// Первый коэффициент
+			f_main2_system(x, y1, y2, a, b, f1, f2);
+			k1_y1 = h * f1;
+			k1_y2 = h * f2;
+
+			// Второй коэффициент
+			f_main2_system(x + h / 2, y1 + k1_y1 / 2, y2 + k1_y2 / 2, a, b, f1, f2);
+			k2_y1 = h * f1;
+			k2_y2 = h * f2;
+
+			// Третий коэффициент
+			f_main2_system(x + h / 2, y1 + k2_y1 / 2, y2 + k2_y2 / 2, a, b, f1, f2);
+			k3_y1 = h * f1;
+			k3_y2 = h * f2;
+
+			// Четвертый коэффициент
+			f_main2_system(x + h, y1 + k3_y1, y2 + k3_y2, a, b, f1, f2);
+			k4_y1 = h * f1;
+			k4_y2 = h * f2;
+
+			// Обновление значений
+			y1 = y1 + (k1_y1 + 2 * k2_y1 + 2 * k3_y1 + k4_y1) / 6;
+			y2 = y2 + (k1_y2 + 2 * k2_y2 + 2 * k3_y2 + k4_y2) / 6;
+		}
+
+		// Правая часть системы для Основной задачи №2
+		void f_main2_system(double x, double y1, double y2, double a, double b, double% f1, double% f2)
+		{
+			f1 = y2;  // du/dx = u'
+			f2 = -a * y2 * y2 - b * y1;  // du'/dx = -a*(u')^2 - b*u
 		}
 
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) //draw
@@ -650,7 +872,14 @@ namespace Graph {
 		GraphPane^ panel = zedGraphControl1->GraphPane;
 		panel->CurveList->Clear();
 
-		// РРЅС‚РµСЂРІР°Р», РіРґРµ РµСЃС‚СЊ РґР°РЅРЅС‹Рµ
+		// Если выбрана задача 2, используем специальную функцию построения графиков
+		if (radioButton3->Checked)
+		{
+			BuildMain2Graphs();
+			return;
+		}
+
+		// Интервал, где есть данные
 		double xmin = Convert::ToDouble(textBox1->Text);
 		double xmax = Convert::ToDouble(textBox2->Text);
 
@@ -676,27 +905,33 @@ namespace Graph {
 					v_list->Add(x_i, v_i);
 			}
 		}
-		
+
 		LineItem^ Curve1 = panel->AddCurve("Numerical solution", v_list, Color::Red, SymbolType::HDash);
 		Curve1->Line->Width = 2.0f;
 
 		v_list->Sort();
-		
 
-		if (checkBox2->Checked)
+		if (radioButton1->Checked && checkBox2->Checked)
 		{
-			panel->CurveList->Clear();
+			//panel->CurveList->Clear();
 			PointPairList^ u_list = gcnew PointPairList();
 
-			for (int i = 0; i < dataGridView1->Rows->Count; i++)
-			{
-				if (dataGridView1->Rows[i]->Cells[0] != nullptr && dataGridView1->Rows[i]->Cells[8] != nullptr)
-				{
-					double x_i = Convert::ToDouble(dataGridView1->Rows[i]->Cells[0]->Value);
-					double u_i = Convert::ToDouble(dataGridView1->Rows[i]->Cells[8]->Value);
+			int N = Convert::ToInt32(textBox9->Text);
+			int n = 1;
 
-					u_list->Add(x_i, u_i);
+			double x0 = 0.0;
+			double u0 = Convert::ToDouble(textBox11->Text);
+
+			for (double x = xmin + h; x <= xmax + h / 1000.0; x += h)
+			{
+				if (n >= N)
+				{
+					break;
 				}
+				n++;
+
+				double u_i = u_test(x, u0);
+				u_list->Add(x, u_i);
 			}
 			u_list->Sort();
 
@@ -704,16 +939,16 @@ namespace Graph {
 			Curve2->Line->Width = 2.0f;
 		}
 
-		// РЈСЃС‚Р°РЅР°РІР»РёРІР°РµРј РёРЅС‚РµСЂРІР°Р» РїРѕ РѕСЃСЏРј
+		// Устанавливаем интервал по осям
 		panel->XAxis->Scale->Min = xmin_limit;
 		panel->XAxis->Scale->Max = xmax_limit;
-		//panel->Title->Text = "Р“СЂР°С„РёРє С„СѓРЅРєС†РёРё f(x,v)";
 		panel->XAxis->Title->Text = "x";
 		panel->YAxis->Title->Text = "v(x)";
 
 		zedGraphControl1->AxisChange();
 		zedGraphControl1->Invalidate();
 	}
+
 	private: System::Void zedGraphControl1_Load(System::Object^ sender, System::EventArgs^ e)
 	{
 	}
@@ -723,26 +958,30 @@ namespace Graph {
 		GraphPane^ panel = zedGraphControl1->GraphPane;
 		double xmin = Convert::ToDouble(textBox1->Text);
 		double xmax = Convert::ToDouble(textBox2->Text);
-		// РЈСЃС‚Р°РЅР°РІР»РёРІР°РµРј РёРЅС‚РµСЂРµСЃСѓСЋС‰РёР№ РЅР°СЃ РёРЅС‚РµСЂРІР°Р» РїРѕ РѕСЃРё X
+		// Устанавливаем интересующий нас интервал по оси X
 		panel->XAxis->Scale->Min = xmin;
 		panel->XAxis->Scale->Max = xmax;
 		zedGraphControl1->AxisChange();
-		// РћР±РЅРѕРІР»СЏРµРј РіСЂР°С„РёРє
+		// Обновляем график
 		zedGraphControl1->Invalidate();
 	}
+
 	private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) //calculate
+	{
+		double x0 = 0.0;
+		double u0 = Convert::ToDouble(textBox11->Text);
+		double v = u0;
+		double v_half = u0;
+
+		double xmin = x0;
+		double xmax = Convert::ToDouble(textBox2->Text);
+		double h = Convert::ToDouble(textBox3->Text);
+
+		if (radioButton1->Checked) // Тестовая задача
 		{
-			double x0 = 0.0;
-			double u0 = Convert::ToDouble(textBox11->Text);
-			double v = u0;
-			double v_half = u0;
-
-			double xmin = x0;
-			double xmax = Convert::ToDouble(textBox2->Text);
-			double h = Convert::ToDouble(textBox3->Text);
-
 			if (checkBox1->Checked)
 			{
+				// С контролем погрешности
 				dataGridView1->AllowUserToAddRows = false;
 				dataGridView1->Rows->Clear();
 				dataGridView1->Rows->Add();
@@ -754,10 +993,10 @@ namespace Graph {
 				dataGridView1->Rows[0]->Cells[5]->Value = 0.0;
 				dataGridView1->Rows[0]->Cells[6]->Value = 0.0;
 				dataGridView1->Rows[0]->Cells[7]->Value = 0.0;
-				dataGridView1->Rows[0]->Cells[8]->Value = u(x0, u0);
+				dataGridView1->Rows[0]->Cells[8]->Value = u_test(x0, u0);
 				dataGridView1->Rows[0]->Cells[9]->Value = 0.0;
 
-				// РЎРїРёСЃРѕРє С‚РѕС‡РµРє
+				// Список точек
 				double eps = Convert::ToDouble(textBox8->Text);
 				int i = 1;
 				int N = Convert::ToInt32(textBox9->Text);
@@ -770,12 +1009,12 @@ namespace Graph {
 
 				while (x <= xmax + h / 1000.0 && n < N)
 				{
-					double u_i = u(x, u0);
+					double u_i = u_test(x, u0);
 
-					double v1 = RK4(x - h, v, h);
+					double v1 = RK4_test(x - h, v, h);
 
-					double tmp = RK4(x - h, v_half, h / 2);
-					double v2 = RK4(x - h + h / 2, tmp, h / 2);
+					double tmp = RK4_test(x - h, v_half, h / 2);
+					double v2 = RK4_test(x - h + h / 2, tmp, h / 2);
 
 					double s = Math::Abs(v2 - v1) / (a - 1);
 
@@ -841,7 +1080,7 @@ namespace Graph {
 
 						h /= 2;
 						count_c1++;
-						
+
 						continue;
 					}
 				}
@@ -927,11 +1166,12 @@ namespace Graph {
 			}
 			else
 			{
+				// Без контроля погрешности
 				dataGridView1->AllowUserToAddRows = false;
 				dataGridView1->Rows->Clear();
 				dataGridView1->Rows->Add();
 				dataGridView1->Rows[0]->Cells[0]->Value = Math::Round(x0, 3);
-				dataGridView1->Rows[0]->Cells[8]->Value = u(x0, u0);
+				dataGridView1->Rows[0]->Cells[8]->Value = u_test(x0, u0);
 				dataGridView1->Rows[0]->Cells[1]->Value = v;
 				dataGridView1->Rows[0]->Cells[2]->Value = v_half;
 				dataGridView1->Rows[0]->Cells[3]->Value = 0.0;
@@ -941,7 +1181,7 @@ namespace Graph {
 				dataGridView1->Rows[0]->Cells[6]->Value = 0.0;
 				dataGridView1->Rows[0]->Cells[7]->Value = 0.0;
 
-				// РЎРїРёСЃРѕРє С‚РѕС‡РµРє
+				// Список точек
 				int i = 1;
 				int N = Convert::ToInt32(textBox9->Text);
 				int n = 1;
@@ -958,13 +1198,13 @@ namespace Graph {
 					dataGridView1->Rows[i]->Cells[6]->Value = 0.0;
 					dataGridView1->Rows[i]->Cells[7]->Value = 0.0;
 
-					double u_i = u(x, u0);
+					double u_i = u_test(x, u0);
 					dataGridView1->Rows[i]->Cells[8]->Value = u_i;
 
-					v = RK4(x - h, v, h);
+					v = RK4_test(x - h, v, h);
 
-					double tmp = RK4(x - h, v_half, h / 2);
-					v_half = RK4(x - h + h / 2, tmp, h / 2);
+					double tmp = RK4_test(x - h, v_half, h / 2);
+					v_half = RK4_test(x - h + h / 2, tmp, h / 2);
 
 					double s = Math::Abs(v_half - v) / (a - 1);
 
@@ -1024,6 +1264,540 @@ namespace Graph {
 				zedGraphControl1->Invalidate();
 			}
 		}
+		else if (radioButton2->Checked) // Основная задача 1
+		{
+			if (checkBox1->Checked)
+			{
+				// С контролем погрешности для основной задачи
+				dataGridView1->AllowUserToAddRows = false;
+				dataGridView1->Rows->Clear();
+				dataGridView1->Rows->Add();
+
+				// НАЧАЛЬНАЯ ТОЧКА
+				dataGridView1->Rows[0]->Cells[0]->Value = Math::Round(x0, 3); // X
+				dataGridView1->Rows[0]->Cells[1]->Value = v;                  // V_1
+				dataGridView1->Rows[0]->Cells[2]->Value = v_half;             // V_2
+				dataGridView1->Rows[0]->Cells[3]->Value = 0.0;                // V_1_minus_V_2
+				dataGridView1->Rows[0]->Cells[4]->Value = 0.0;                // OLP
+				dataGridView1->Rows[0]->Cells[5]->Value = h;                  // h
+				dataGridView1->Rows[0]->Cells[6]->Value = 0.0;                // C1 (флаг уменьшения шага)
+				dataGridView1->Rows[0]->Cells[7]->Value = 0.0;                // C2 (флаг увеличения шага)
+				dataGridView1->Rows[0]->Cells[8]->Value = 0.0;                // U (нет точного решения)
+				dataGridView1->Rows[0]->Cells[9]->Value = 0.0;                // U_minus_V_1
+
+				// Параметры
+				double eps = Convert::ToDouble(textBox8->Text);
+				int i = 1;
+				int N = Convert::ToInt32(textBox9->Text);
+				int n = 1;
+				double a = Math::Pow(2, 4);
+				int count_c1 = 0; // счетчик уменьшений шага
+				int count_c2 = 0; // счетчик увеличений шага
+
+				double x = xmin + h;
+
+				// ДЛЯ СТАТИСТИКИ
+				double max_olp = 0.0;
+				double max_h = h;
+				double min_h = h;
+				double x_max_h = x0;
+				double x_min_h = x0;
+				double max_abs_error = 0.0;
+				double x_max_abs_error = x0;
+
+				// ДЛЯ ГРАФИКОВ
+				PointPairList^ points_V1 = gcnew PointPairList();
+				PointPairList^ points_V2 = gcnew PointPairList();
+				PointPairList^ points_error = gcnew PointPairList();
+
+				points_V1->Add(x0, v);
+				points_V2->Add(x0, v_half);
+				points_error->Add(x0, 0.0);
+
+				while (x <= xmax + h / 1000.0 && n < N)
+				{
+					// Вычисляем решения
+					double v1 = RK4_main1(x - h, v, h);
+					double tmp = RK4_main1(x - h, v_half, h / 2);
+					double v2 = RK4_main1(x - h + h / 2, tmp, h / 2);
+
+					double s = Math::Abs(v2 - v1) / (a - 1); // локальная погрешность
+					double scaled_error = s * a; // оценка погрешности
+
+					// ОБНОВЛЯЕМ СТАТИСТИКУ
+					if (scaled_error > max_olp) max_olp = scaled_error;
+					if (h > max_h) { max_h = h; x_max_h = x; }
+					if (h < min_h) { min_h = h; x_min_h = x; }
+					double current_abs_error = Math::Abs(v1 - v2);
+					if (current_abs_error > max_abs_error) {
+						max_abs_error = current_abs_error;
+						x_max_abs_error = x;
+					}
+
+					if ((s >= (eps / Math::Pow(2, 5))) && (s <= eps))
+					{
+						// Шаг принимается без изменения
+						v = v1;
+						v_half = v2;
+
+						dataGridView1->Rows->Add();
+						dataGridView1->Rows[i]->Cells[0]->Value = Math::Round(x, 3); // X
+						dataGridView1->Rows[i]->Cells[1]->Value = v;                  // V_1
+						dataGridView1->Rows[i]->Cells[2]->Value = v_half;             // V_2
+						dataGridView1->Rows[i]->Cells[3]->Value = v - v_half;         // V_1_minus_V_2
+						dataGridView1->Rows[i]->Cells[4]->Value = scaled_error;       // OLP
+						dataGridView1->Rows[i]->Cells[5]->Value = h;                  // h
+						dataGridView1->Rows[i]->Cells[6]->Value = 0.0;                // C1 = 0 (без уменьшения)
+						dataGridView1->Rows[i]->Cells[7]->Value = 0.0;                // C2 = 0 (без увеличения)
+						dataGridView1->Rows[i]->Cells[8]->Value = 0.0;                // U
+						dataGridView1->Rows[i]->Cells[9]->Value = 0.0;                // U_minus_V_1
+
+						// ДОБАВЛЯЕМ ТОЧКИ НА ГРАФИКИ
+						points_V1->Add(x, v);
+						points_V2->Add(x, v_half);
+						points_error->Add(x, scaled_error);
+
+						x += h;
+						n++;
+						i++;
+					}
+					else if (s < (eps / Math::Pow(2, 5)))
+					{
+						// Увеличиваем шаг
+						v = v1;
+						v_half = v2;
+
+						dataGridView1->Rows->Add();
+						dataGridView1->Rows[i]->Cells[0]->Value = Math::Round(x, 3); // X
+						dataGridView1->Rows[i]->Cells[1]->Value = v;                  // V_1
+						dataGridView1->Rows[i]->Cells[2]->Value = v_half;             // V_2
+						dataGridView1->Rows[i]->Cells[3]->Value = v - v_half;         // V_1_minus_V_2
+						dataGridView1->Rows[i]->Cells[4]->Value = scaled_error;       // OLP
+						dataGridView1->Rows[i]->Cells[5]->Value = h;                  // h
+						dataGridView1->Rows[i]->Cells[6]->Value = 0.0;                // C1 = 0 (без уменьшения)
+						dataGridView1->Rows[i]->Cells[7]->Value = 1.0;                // C2 = 1 (флаг увеличения)
+						dataGridView1->Rows[i]->Cells[8]->Value = 0.0;                // U
+						dataGridView1->Rows[i]->Cells[9]->Value = 0.0;                // U_minus_V_1
+
+						// ДОБАВЛЯЕМ ТОЧКИ НА ГРАФИКИ
+						points_V1->Add(x, v);
+						points_V2->Add(x, v_half);
+						points_error->Add(x, scaled_error);
+
+						h *= 2;
+						count_c2++;
+						x += h;
+						n++;
+						i++;
+					}
+					else if (s > eps)
+					{
+						// Уменьшаем шаг
+						dataGridView1->Rows->Add();
+						dataGridView1->Rows[i]->Cells[0]->Value = Math::Round(x, 3); // X
+						dataGridView1->Rows[i]->Cells[1]->Value = v;                  // V_1
+						dataGridView1->Rows[i]->Cells[2]->Value = v_half;             // V_2
+						dataGridView1->Rows[i]->Cells[3]->Value = v - v_half;         // V_1_minus_V_2
+						dataGridView1->Rows[i]->Cells[4]->Value = scaled_error;       // OLP
+						dataGridView1->Rows[i]->Cells[5]->Value = h;                  // h
+						dataGridView1->Rows[i]->Cells[6]->Value = 1.0;                // C1 = 1 (флаг уменьшения)
+						dataGridView1->Rows[i]->Cells[7]->Value = 0.0;                // C2 = 0 (без увеличения)
+						dataGridView1->Rows[i]->Cells[8]->Value = 0.0;                // U
+						dataGridView1->Rows[i]->Cells[9]->Value = 0.0;                // U_minus_V_1
+
+						// ДОБАВЛЯЕМ ТОЧКИ НА ГРАФИКИ (даже при неудачном шаге)
+						points_V1->Add(x, v);
+						points_V2->Add(x, v_half);
+						points_error->Add(x, scaled_error);
+
+						i++;
+						h /= 2;
+						count_c1++;
+						continue;
+					}
+					
+
+				}
+
+				// Вычисление x_n
+				double x_n = 0;
+				DataGridViewCell^ lastCell = dataGridView1->Rows[dataGridView1->RowCount - 1]->Cells[0];
+				if (lastCell->Value != nullptr)
+				{
+					x_n = Convert::ToDouble(lastCell->Value);
+				}
+
+				// ПОСТРОЕНИЕ ГРАФИКОВ
+				GraphPane^ pane = zedGraphControl1->GraphPane;
+				pane->CurveList->Clear();
+
+
+				// Настройка графика
+				pane->Title->Text = "Основная задача - решение с контролем погрешности";
+				pane->XAxis->Title->Text = "x";
+				pane->YAxis->Title->Text = "y(x)";
+				pane->Legend->IsVisible = true;
+				pane->Legend->Position = LegendPos::TopCenter;
+
+				// Обновление графика
+				zedGraphControl1->AxisChange();
+				zedGraphControl1->Invalidate();
+
+				// ВЫВОД РЕЗУЛЬТАТОВ
+				textBox12->Text = L"Results:";
+				textBox12->AppendText(String::Format("\r\nn = {0}", n));
+				textBox12->AppendText(String::Format("\r\nb - x_n = {0}", xmax - x_n));
+				textBox12->AppendText(String::Format("\r\nMax OLP = {0}", max_olp));
+				textBox12->AppendText(String::Format("\r\nCount c1 = {0}", count_c1));
+				textBox12->AppendText(String::Format("\r\nCount c2 = {0}", count_c2));
+				textBox12->AppendText(String::Format("\r\nMax h_i = {0} in x = {1}", max_h, x_max_h));
+				textBox12->AppendText(String::Format("\r\nMin h_i = {0} in x = {1}", min_h, x_min_h));
+				textBox12->AppendText(String::Format("\r\nMax |U_i - V1_i| = {0} in x = {1}", max_abs_error, x_max_abs_error));
+				
+			}
+			else {
+				// Без контроля погрешности для основной задачи 1
+				dataGridView1->AllowUserToAddRows = false;
+				dataGridView1->Rows->Clear();
+				dataGridView1->Rows->Add();
+				dataGridView1->Rows[0]->Cells[0]->Value = Math::Round(x0, 3);
+				dataGridView1->Rows[0]->Cells[1]->Value = v;
+				dataGridView1->Rows[0]->Cells[2]->Value = v_half;
+				dataGridView1->Rows[0]->Cells[3]->Value = 0.0;
+				dataGridView1->Rows[0]->Cells[4]->Value = 0.0;
+				dataGridView1->Rows[0]->Cells[5]->Value = 0.0;
+				dataGridView1->Rows[0]->Cells[6]->Value = 0.0;
+				dataGridView1->Rows[0]->Cells[7]->Value = 0.0;
+				dataGridView1->Rows[0]->Cells[8]->Value = 0.0; // Нет точного решения
+				dataGridView1->Rows[0]->Cells[9]->Value = 0.0;
+
+				// Список точек
+				int i = 1;
+				int N = Convert::ToInt32(textBox9->Text);
+				int n = 1;
+				double a = Math::Pow(2, 4);
+
+				for (double x = xmin + h; x <= xmax + h / 1000.0; x += h)
+				{
+					if (n >= N)
+					{
+						break;
+					}
+					n++;
+					dataGridView1->Rows->Add();
+					dataGridView1->Rows[i]->Cells[0]->Value = Math::Round(x, 3);
+					dataGridView1->Rows[i]->Cells[6]->Value = 0.0;
+					dataGridView1->Rows[i]->Cells[7]->Value = 0.0;
+
+					// Вычисляем приближенное решение
+					v = RK4_main1(x - h, v, h);
+
+					// Вычисляем решение с половинным шагом для оценки погрешности
+					double tmp = RK4_main1(x - h, v_half, h / 2);
+					v_half = RK4_main1(x - h + h / 2, tmp, h / 2);
+
+					double s = Math::Abs(v_half - v) / (a - 1);
+
+					dataGridView1->Rows[i]->Cells[5]->Value = h;
+					dataGridView1->Rows[i]->Cells[1]->Value = v;
+					dataGridView1->Rows[i]->Cells[2]->Value = v_half;
+					dataGridView1->Rows[i]->Cells[3]->Value = v - v_half;
+					dataGridView1->Rows[i]->Cells[4]->Value = s * a;
+					dataGridView1->Rows[i]->Cells[8]->Value = 0.0; // Нет точного решения
+					dataGridView1->Rows[i]->Cells[9]->Value = 0.0;
+
+					++i;
+				}
+
+				double x_n = 0;
+				DataGridViewCell^ lastCell = dataGridView1->Rows[dataGridView1->RowCount - 1]->Cells[0];
+				if (lastCell->Value != nullptr)
+				{
+					x_n = Convert::ToDouble(lastCell->Value);
+				}
+
+				double max_olp = Math::Abs(Convert::ToDouble(dataGridView1->Rows[0]->Cells[4]->Value));
+
+				for (int i = 1; i < dataGridView1->RowCount; i++)
+				{
+					double m = Math::Abs(Convert::ToDouble(dataGridView1->Rows[i]->Cells[4]->Value));
+					if (m > max_olp)
+					{
+						max_olp = m;
+					}
+				}
+
+				//results
+				textBox12->Text = L"Results for Main Task 1:";
+				textBox12->AppendText(String::Format("\r\nn = {0}", n));
+				textBox12->AppendText(String::Format("\r\nb - x_n = {0}", xmax - x_n));
+				textBox12->AppendText(String::Format("\r\nMax OLP = {0}", max_olp));
+				textBox12->AppendText("\r\nNo exact solution available for comparison");
+
+				zedGraphControl1->Invalidate();
+			}
+		}
+		else if (radioButton3->Checked) // Основная задача №2
+		{
+			// Получаем параметры
+			double a_param = Convert::ToDouble(textBoxA->Text);
+			double b_param = Convert::ToDouble(textBoxB->Text);
+			double up0 = Convert::ToDouble(textBox10->Text);      // u'(0)
+
+			if (checkBox1->Checked)
+			{
+				// С контролем погрешности
+				dataGridView1->AllowUserToAddRows = false;
+				dataGridView1->Rows->Clear();
+				dataGridView1->Rows->Add();
+				dataGridView1->Rows[0]->Cells[0]->Value = Math::Round(x0, 3);
+				dataGridView1->Rows[0]->Cells[1]->Value = u0;      // v1 (u)
+				dataGridView1->Rows[0]->Cells[2]->Value = up0;     // v2 (u')
+				dataGridView1->Rows[0]->Cells[3]->Value = 0.0;
+				dataGridView1->Rows[0]->Cells[4]->Value = 0.0;
+				dataGridView1->Rows[0]->Cells[5]->Value = 0.0;
+				dataGridView1->Rows[0]->Cells[6]->Value = 0.0;
+				dataGridView1->Rows[0]->Cells[7]->Value = 0.0;
+
+				// Начальные значения
+				double v1 = u0;   // u
+				double v2 = up0;  // u'
+				double v1_half = u0;
+				double v2_half = up0;
+
+				// Список точек
+				double eps = Convert::ToDouble(textBox8->Text);
+				int i = 1;
+				int N = Convert::ToInt32(textBox9->Text);
+				int n = 1;
+				double a = Math::Pow(2, 4);
+				int count_c1 = 0; //div
+				int count_c2 = 0; //mult
+
+				double x = xmin + h;
+
+				while (x <= xmax + h / 1000.0 && n < N)
+				{
+					// Вычисляем с полным шагом
+					double v1_new = v1;
+					double v2_new = v2;
+					RK4_main2_system(x - h, v1_new, v2_new, h, a_param, b_param);
+
+					// Вычисляем с двумя половинными шагами
+					double v1_tmp = v1_half;
+					double v2_tmp = v2_half;
+					RK4_main2_system(x - h, v1_tmp, v2_tmp, h / 2, a_param, b_param);
+					double v1_half_new = v1_tmp;
+					double v2_half_new = v2_tmp;
+					RK4_main2_system(x - h + h / 2, v1_half_new, v2_half_new, h / 2, a_param, b_param);
+
+					// Оценка погрешности (максимум из двух компонент)
+					double s1 = Math::Abs(v1_half_new - v1_new) / (a - 1);
+					double s2 = Math::Abs(v2_half_new - v2_new) / (a - 1);
+					double s = Math::Max(s1, s2);
+
+					if ((s >= (eps / Math::Pow(2, 5))) && (s <= eps))
+					{
+						// Шаг принимается
+						v1 = v1_new;
+						v2 = v2_new;
+						v1_half = v1_half_new;
+						v2_half = v2_half_new;
+
+						dataGridView1->Rows->Add();
+						dataGridView1->Rows[i]->Cells[0]->Value = Math::Round(x, 3);
+						dataGridView1->Rows[i]->Cells[1]->Value = v1;      // u(x)
+						dataGridView1->Rows[i]->Cells[2]->Value = v2;      // u'(x)
+						dataGridView1->Rows[i]->Cells[3]->Value = v1 - v1_half; // разность для u
+						dataGridView1->Rows[i]->Cells[4]->Value = s * a;   // ОЛП
+						dataGridView1->Rows[i]->Cells[5]->Value = h;       // шаг
+						dataGridView1->Rows[i]->Cells[6]->Value = 0.0;     // C1
+						dataGridView1->Rows[i]->Cells[7]->Value = 0.0;     // C2
+
+						x += h;
+						n++;
+						i++;
+					}
+					else if (s < (eps / Math::Pow(2, 5)))
+					{
+						// Увеличиваем шаг
+						v1 = v1_new;
+						v2 = v2_new;
+						v1_half = v1_half_new;
+						v2_half = v2_half_new;
+
+						dataGridView1->Rows->Add();
+						dataGridView1->Rows[i]->Cells[0]->Value = Math::Round(x, 3);
+						dataGridView1->Rows[i]->Cells[1]->Value = v1;
+						dataGridView1->Rows[i]->Cells[2]->Value = v2;
+						dataGridView1->Rows[i]->Cells[3]->Value = v1 - v1_half;
+						dataGridView1->Rows[i]->Cells[4]->Value = s * a;
+						dataGridView1->Rows[i]->Cells[5]->Value = h;
+						dataGridView1->Rows[i]->Cells[6]->Value = 0.0;
+						dataGridView1->Rows[i]->Cells[7]->Value = 1.0;
+
+						h *= 2;
+						count_c2++;
+						x += h;
+						n++;
+						i++;
+					}
+					else if (s > eps)
+					{
+						// Уменьшаем шаг
+						dataGridView1->Rows->Add();
+						dataGridView1->Rows[i]->Cells[0]->Value = Math::Round(x, 3);
+						dataGridView1->Rows[i]->Cells[1]->Value = v1;
+						dataGridView1->Rows[i]->Cells[2]->Value = v2;
+						dataGridView1->Rows[i]->Cells[3]->Value = v1 - v1_half;
+						dataGridView1->Rows[i]->Cells[4]->Value = s * a;
+						dataGridView1->Rows[i]->Cells[5]->Value = h;
+						dataGridView1->Rows[i]->Cells[6]->Value = 1.0;
+						dataGridView1->Rows[i]->Cells[7]->Value = 0.0;
+
+						i++;
+						h /= 2;
+						count_c1++;
+						continue;
+					}
+				}
+
+				// Вычисление статистики
+				double x_n = 0;
+				DataGridViewCell^ lastCell = dataGridView1->Rows[dataGridView1->RowCount - 1]->Cells[0];
+				if (lastCell->Value != nullptr)
+				{
+					x_n = Convert::ToDouble(lastCell->Value);
+				}
+
+				double max_olp = Math::Abs(Convert::ToDouble(dataGridView1->Rows[0]->Cells[4]->Value));
+				double max_h = Convert::ToDouble(dataGridView1->Rows[0]->Cells[5]->Value);
+				double x_max_h = Convert::ToDouble(dataGridView1->Rows[0]->Cells[0]->Value);
+				double min_h = Convert::ToDouble(dataGridView1->Rows[0]->Cells[5]->Value);
+				double x_min_h = Convert::ToDouble(dataGridView1->Rows[0]->Cells[0]->Value);
+
+				for (int i = 1; i < dataGridView1->RowCount; i++)
+				{
+					double c1 = Convert::ToDouble(dataGridView1->Rows[i]->Cells[6]->Value);
+					if (c1 == 0.0)
+					{
+						double m = Math::Abs(Convert::ToDouble(dataGridView1->Rows[i]->Cells[4]->Value));
+						double ma_h = Convert::ToDouble(dataGridView1->Rows[i]->Cells[5]->Value);
+						double x_ma_h = Convert::ToDouble(dataGridView1->Rows[i]->Cells[0]->Value);
+						double mi_h = Convert::ToDouble(dataGridView1->Rows[i]->Cells[5]->Value);
+						double x_mi_h = Convert::ToDouble(dataGridView1->Rows[i]->Cells[0]->Value);
+
+						if (m > max_olp) max_olp = m;
+						if (ma_h > max_h)
+						{
+							max_h = ma_h;
+							x_max_h = x_ma_h;
+						}
+						if (mi_h < min_h)
+						{
+							min_h = mi_h;
+							x_min_h = x_mi_h;
+						}
+					}
+				}
+
+				// Вывод результатов
+				textBox12->Text = L"Results:";
+				textBox12->AppendText(String::Format("\r\nn = {0}", n));
+				textBox12->AppendText(String::Format("\r\nb - x_n = {0}", xmax - x_n));
+				textBox12->AppendText(String::Format("\r\nMax OLP = {0}", max_olp));
+				textBox12->AppendText(String::Format("\r\nCount c1 = {0}", count_c1));
+				textBox12->AppendText(String::Format("\r\nCount c2 = {0}", count_c2));
+				textBox12->AppendText(String::Format("\r\nMax h_i = {0} in x = {1}", max_h, x_max_h));
+				textBox12->AppendText(String::Format("\r\nMin h_i = {0} in x = {1}", min_h, x_min_h));
+
+				// Построение графиков будет по кнопке Draw
+			}
+			else
+			{
+				// Без контроля погрешности
+				dataGridView1->AllowUserToAddRows = false;
+				dataGridView1->Rows->Clear();
+				dataGridView1->Rows->Add();
+				dataGridView1->Rows[0]->Cells[0]->Value = Math::Round(x0, 3);
+				dataGridView1->Rows[0]->Cells[1]->Value = u0;
+				dataGridView1->Rows[0]->Cells[2]->Value = up0;
+				dataGridView1->Rows[0]->Cells[3]->Value = 0.0;
+				dataGridView1->Rows[0]->Cells[4]->Value = 0.0;
+				dataGridView1->Rows[0]->Cells[5]->Value = 0.0;
+				dataGridView1->Rows[0]->Cells[6]->Value = 0.0;
+				dataGridView1->Rows[0]->Cells[7]->Value = 0.0;
+
+				// Начальные значения
+				double v1 = u0;
+				double v2 = up0;
+				double v1_half = u0;
+				double v2_half = up0;
+
+				// Список точек
+				int i = 1;
+				int N = Convert::ToInt32(textBox9->Text);
+				int n = 1;
+				double a = Math::Pow(2, 4);
+
+				for (double x = xmin + h; x <= xmax + h / 1000.0; x += h)
+				{
+					if (n >= N) break;
+					n++;
+
+					dataGridView1->Rows->Add();
+					dataGridView1->Rows[i]->Cells[0]->Value = Math::Round(x, 3);
+					dataGridView1->Rows[i]->Cells[6]->Value = 0.0;
+					dataGridView1->Rows[i]->Cells[7]->Value = 0.0;
+
+					// Вычисляем с полным шагом
+					RK4_main2_system(x - h, v1, v2, h, a_param, b_param);
+
+					// Вычисляем с двумя половинными шагами
+					double v1_tmp = v1_half;
+					double v2_tmp = v2_half;
+					RK4_main2_system(x - h, v1_tmp, v2_tmp, h / 2, a_param, b_param);
+					v1_half = v1_tmp;
+					v2_half = v2_tmp;
+					RK4_main2_system(x - h + h / 2, v1_half, v2_half, h / 2, a_param, b_param);
+
+					// Оценка погрешности
+					double s1 = Math::Abs(v1_half - v1) / (a - 1);
+					double s2 = Math::Abs(v2_half - v2) / (a - 1);
+					double s = Math::Max(s1, s2);
+
+					dataGridView1->Rows[i]->Cells[5]->Value = h;
+					dataGridView1->Rows[i]->Cells[1]->Value = v1;
+					dataGridView1->Rows[i]->Cells[2]->Value = v2;
+					dataGridView1->Rows[i]->Cells[3]->Value = v1 - v1_half;
+					dataGridView1->Rows[i]->Cells[4]->Value = s * a;
+
+					i++;
+				}
+
+				double x_n = 0;
+				DataGridViewCell^ lastCell = dataGridView1->Rows[dataGridView1->RowCount - 1]->Cells[0];
+				if (lastCell->Value != nullptr)
+				{
+					x_n = Convert::ToDouble(lastCell->Value);
+				}
+
+				double max_olp = Math::Abs(Convert::ToDouble(dataGridView1->Rows[0]->Cells[4]->Value));
+				for (int i = 1; i < dataGridView1->RowCount; i++)
+				{
+					double m = Math::Abs(Convert::ToDouble(dataGridView1->Rows[i]->Cells[4]->Value));
+					if (m > max_olp) max_olp = m;
+				}
+
+				textBox12->Text = L"Results:";
+				textBox12->AppendText(String::Format("\r\nn = {0}", n));
+				textBox12->AppendText(String::Format("\r\nb - x_n = {0}", xmax - x_n));
+				textBox12->AppendText(String::Format("\r\nMax OLP = {0}", max_olp));
+
+			}
+		}
+	}
+
 	private: System::Void radioButton1_CheckedChanged(System::Object^ sender, System::EventArgs^ e)
 	{
 		if (radioButton1->Checked)
@@ -1031,6 +1805,7 @@ namespace Graph {
 			GraphPane^ panel = zedGraphControl1->GraphPane;
 			panel->CurveList->Clear();
 			panel->Title->Text = "Test Task";
+			checkBox2->Enabled = true;
 
 			zedGraphControl1->Invalidate();
 		}
@@ -1043,7 +1818,9 @@ namespace Graph {
 			GraphPane^ panel = zedGraphControl1->GraphPane;
 			panel->CurveList->Clear();
 			dataGridView1->Rows->Clear();
-			panel->Title->Text = "Main Task 2";
+			panel->Title->Text = "Main Task 1";
+			checkBox2->Enabled = false;
+
 			zedGraphControl1->Invalidate();
 		}
 	}
@@ -1056,29 +1833,13 @@ namespace Graph {
 			panel->CurveList->Clear();
 			dataGridView1->Rows->Clear();
 			panel->Title->Text = "Main Task 2";
+			checkBox2->Enabled = false;
+
+			// Показываем панель для задачи 2
+			panelTask2->Visible = true;
+
 			zedGraphControl1->Invalidate();
 		}
 	}
-
-	private: System::Void checkBox1_CheckedChanged(System::Object^ sender, System::EventArgs^ e)
-	{
-
-
-	}
-	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e)
-	{
-
-
-	}
-	private: System::Void checkBox2_CheckedChanged(System::Object^ sender, System::EventArgs^ e)
-	{
-
-
-	}
-	private: System::Void label12_Click(System::Object^ sender, System::EventArgs^ e)
-	{
-
-
-	}
-};
+	};
 }
