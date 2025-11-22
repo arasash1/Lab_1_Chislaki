@@ -1,4 +1,4 @@
-#include <math.h>
+Ôªø#include <math.h>
 
 namespace Graph {
 
@@ -86,7 +86,7 @@ namespace Graph {
 	private: System::Windows::Forms::CheckBox^ checkBox2;
 	private: System::Windows::Forms::TextBox^ textBox12;
 
-		   // ƒÓ·‡‚ÎÂÌÌ˚Â ˝ÎÂÏÂÌÚ˚ ‰Îˇ Á‡‰‡˜Ë 2
+		   // –î–æ–±–∞–≤–ª–µ–Ω–Ω—ã–µ —ç–ª–µ–º–µ–Ω—Ç—ã –¥–ª—è –∑–∞–¥–∞—á–∏ 2
 	private: System::Windows::Forms::Panel^ panelTask2;
 	private: System::Windows::Forms::Label^ label13;
 	private: System::Windows::Forms::TextBox^ textBoxA;
@@ -179,7 +179,7 @@ namespace Graph {
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(317, 36);
 			this->button1->TabIndex = 1;
-			this->button1->Text = L"Draw";
+			this->button1->Text = L"–ù–∞—Ä–∏—Å–æ–≤–∞—Ç—å";
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
 			// 
@@ -342,7 +342,7 @@ namespace Graph {
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(317, 36);
 			this->button2->TabIndex = 9;
-			this->button2->Text = L"Zoom";
+			this->button2->Text = L"–ü—Ä–∏–±–ª–∏–∑–∏—Ç—å";
 			this->button2->UseVisualStyleBackColor = true;
 			this->button2->Click += gcnew System::EventHandler(this, &MyForm::button2_Click);
 			// 
@@ -367,9 +367,9 @@ namespace Graph {
 			this->radioButton1->AutoSize = true;
 			this->radioButton1->Location = System::Drawing::Point(82, 582);
 			this->radioButton1->Name = L"radioButton1";
-			this->radioButton1->Size = System::Drawing::Size(74, 20);
+			this->radioButton1->Size = System::Drawing::Size(147, 20);
 			this->radioButton1->TabIndex = 14;
-			this->radioButton1->Text = L"test task";
+			this->radioButton1->Text = L"–¢–µ—Å—Ç–æ–≤–æ–µ –∑–∞–¥–∞–Ω–∏–µ";
 			this->radioButton1->UseVisualStyleBackColor = true;
 			this->radioButton1->CheckedChanged += gcnew System::EventHandler(this, &MyForm::radioButton1_CheckedChanged);
 			// 
@@ -378,9 +378,9 @@ namespace Graph {
 			this->radioButton2->AutoSize = true;
 			this->radioButton2->Location = System::Drawing::Point(231, 582);
 			this->radioButton2->Name = L"radioButton2";
-			this->radioButton2->Size = System::Drawing::Size(92, 20);
+			this->radioButton2->Size = System::Drawing::Size(122, 20);
 			this->radioButton2->TabIndex = 15;
-			this->radioButton2->Text = L"main task 1";
+			this->radioButton2->Text = L"–û—Å–Ω. –∑–∞–¥–∞–Ω–∏–µ 1";
 			this->radioButton2->UseVisualStyleBackColor = true;
 			this->radioButton2->CheckedChanged += gcnew System::EventHandler(this, &MyForm::radioButton2_CheckedChanged);
 			// 
@@ -389,9 +389,9 @@ namespace Graph {
 			this->radioButton3->AutoSize = true;
 			this->radioButton3->Location = System::Drawing::Point(386, 582);
 			this->radioButton3->Name = L"radioButton3";
-			this->radioButton3->Size = System::Drawing::Size(92, 20);
+			this->radioButton3->Size = System::Drawing::Size(122, 20);
 			this->radioButton3->TabIndex = 16;
-			this->radioButton3->Text = L"main task 2";
+			this->radioButton3->Text = L"–û—Å–Ω. –∑–∞–¥–∞–Ω–∏–µ 2";
 			this->radioButton3->UseVisualStyleBackColor = true;
 			this->radioButton3->CheckedChanged += gcnew System::EventHandler(this, &MyForm::radioButton3_CheckedChanged);
 			// 
@@ -552,9 +552,9 @@ namespace Graph {
 			this->checkBox1->AutoSize = true;
 			this->checkBox1->Location = System::Drawing::Point(667, 515);
 			this->checkBox1->Name = L"checkBox1";
-			this->checkBox1->Size = System::Drawing::Size(52, 20);
+			this->checkBox1->Size = System::Drawing::Size(55, 20);
 			this->checkBox1->TabIndex = 33;
-			this->checkBox1->Text = L"OLP";
+			this->checkBox1->Text = L"–û–õ–ü";
 			this->checkBox1->UseVisualStyleBackColor = true;
 			// 
 			// comboBoxGraphType
@@ -574,18 +574,18 @@ namespace Graph {
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(317, 36);
 			this->button3->TabIndex = 34;
-			this->button3->Text = L"Calculate";
+			this->button3->Text = L"–í—ã—á–∏—Å–ª–∏—Ç—å";
 			this->button3->UseVisualStyleBackColor = true;
 			this->button3->Click += gcnew System::EventHandler(this, &MyForm::button3_Click);
 			// 
 			// checkBox2
 			// 
 			this->checkBox2->AutoSize = true;
-			this->checkBox2->Location = System::Drawing::Point(580, 536);
+			this->checkBox2->Location = System::Drawing::Point(667, 541);
 			this->checkBox2->Name = L"checkBox2";
-			this->checkBox2->Size = System::Drawing::Size(139, 20);
+			this->checkBox2->Size = System::Drawing::Size(215, 20);
 			this->checkBox2->TabIndex = 35;
-			this->checkBox2->Text = L"draw exact solution";
+			this->checkBox2->Text = L"–ù–∞—Ä–∏—Å–æ–≤–∞—Ç—å —Ç–æ—á–Ω–æ–µ —Ä–µ—à–µ–Ω–∏–µ";
 			this->checkBox2->UseVisualStyleBackColor = true;
 			// 
 			// textBoxB
@@ -606,7 +606,7 @@ namespace Graph {
 			this->panelTask2->Controls->Add(this->label14);
 			this->panelTask2->Controls->Add(this->textBoxA);
 			this->panelTask2->Controls->Add(this->label13);
-			this->panelTask2->Location = System::Drawing::Point(1323, 448);
+			this->panelTask2->Location = System::Drawing::Point(1325, 445);
 			this->panelTask2->Name = L"panelTask2";
 			this->panelTask2->Size = System::Drawing::Size(437, 150);
 			this->panelTask2->TabIndex = 37;
@@ -618,9 +618,10 @@ namespace Graph {
 			this->label15->Location = System::Drawing::Point(20, 103);
 			this->label15->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label15->Name = L"label15";
-			this->label15->Size = System::Drawing::Size(79, 16);
+			this->label15->Size = System::Drawing::Size(91, 16);
 			this->label15->TabIndex = 41;
-			this->label15->Text = L"Graph Type";
+			this->label15->Text = L"–¢–∏–ø –≥—Ä–∞—Ñ–∏–∫–∞";
+			this->label15->Click += gcnew System::EventHandler(this, &MyForm::label15_Click);
 			// 
 			// label14
 			// 
@@ -716,72 +717,14 @@ namespace Graph {
 #pragma endregion
 
 	private:
+		//–¥–ª—è –≤—Å–µ—Ö –∑–∞–¥–∞—á –∫—Ä–æ–º–µ 2
+		PointPairList^ v_list = gcnew PointPairList();
+		//–¥–ª—è 2 –∑–∞–¥–∞—á–∏
+		PointPairList^ v1_list = gcnew PointPairList();
+		PointPairList^ v2_list = gcnew PointPairList();
+		PointPairList^ v1_v2_list = gcnew PointPairList();
 
-		void BuildMain2Graphs()
-		{
-			GraphPane^ panel = zedGraphControl1->GraphPane;
-			panel->CurveList->Clear();
-
-			if (!radioButton3->Checked) return;
-
-			String^ selectedGraph = comboBoxGraphType->Text;
-			double a_param = Convert::ToDouble(textBoxA->Text);
-			double b_param = Convert::ToDouble(textBoxB->Text);
-
-			PointPairList^ graphList = gcnew PointPairList();
-
-			for (int i = 0; i < dataGridView1->Rows->Count; i++)
-			{
-				if (dataGridView1->Rows[i]->Cells[0] != nullptr &&
-					dataGridView1->Rows[i]->Cells[1] != nullptr &&
-					dataGridView1->Rows[i]->Cells[2] != nullptr)
-				{
-					double x = Convert::ToDouble(dataGridView1->Rows[i]->Cells[0]->Value);
-					double u1 = Convert::ToDouble(dataGridView1->Rows[i]->Cells[1]->Value);  // u(x)
-					double u2 = Convert::ToDouble(dataGridView1->Rows[i]->Cells[2]->Value);  // u'(x)
-
-					if (selectedGraph == "(x, u1(x))")
-					{
-						graphList->Add(x, u1);
-						panel->XAxis->Title->Text = "x";
-						panel->YAxis->Title->Text = "u1(x)";
-					}
-					else if (selectedGraph == "(x, u2(x))")
-					{
-						graphList->Add(x, u2);
-						panel->XAxis->Title->Text = "x";
-						panel->YAxis->Title->Text = "u2(x)";
-					}
-					else if (selectedGraph == "(u1(x), u2(x))")
-					{
-						graphList->Add(u1, u2);
-						panel->XAxis->Title->Text = "u1(x)";
-						panel->YAxis->Title->Text = "u2(x)";
-					}
-				}
-			}
-
-			if (graphList->Count > 0)
-			{
-				String^ curveTitle = String::Format("Main Task 2 (a={0}, b={1}) - {2}",
-					a_param, b_param, selectedGraph);
-				LineItem^ curve = panel->AddCurve(curveTitle, graphList, Color::Blue, SymbolType::None);
-				curve->Line->Width = 2.0f;
-
-				if (selectedGraph == "(u1(x), u2(x))")
-				{
-					panel->Title->Text = "Phase Portrait: u1(x) vs u2(x)";
-				}
-				else
-				{
-					panel->Title->Text = "Main Task 2: " + selectedGraph;
-				}
-
-				zedGraphControl1->AxisChange();
-				zedGraphControl1->Invalidate();
-			}
-		}
-		// “ÂÒÚÓ‚‡ˇ Á‡‰‡˜‡
+		// –¢–µ—Å—Ç–æ–≤–∞—è –∑–∞–¥–∞—á–∞
 		double f_test(double x, double u)
 		{
 			return -3.0 / 2.0 * u;
@@ -793,11 +736,11 @@ namespace Graph {
 			return u1;
 		}
 
-		// ŒÒÌÓ‚Ì‡ˇ Á‡‰‡˜‡ π1 ‰Îˇ ‚‡Ë‡ÌÚ‡ 3
+		// –û—Å–Ω–æ–≤–Ω–∞—è –∑–∞–¥–∞—á–∞ ‚Ññ1 –¥–ª—è –≤–∞—Ä–∏–∞–Ω—Ç–∞ 3
 		double f_main1(double x)
 		{
-			// f(x) = 1/(1+x^2)^(1/3) ‰Îˇ ‚‡Ë‡ÌÚ‡ 3
-			return 1.0 / pow(1.0 + x * x, 1.0 / 3.0);
+			// f(x) = 1/(1+x^2)^(1/3) –¥–ª—è –≤–∞—Ä–∏–∞–Ω—Ç–∞ 3
+			return 1.0 / pow(1.0 + x * x, (1.0 / 3.0));
 		}
 
 		double f_main1_derivative(double x, double u)
@@ -806,7 +749,7 @@ namespace Graph {
 			return f_main1(x) * u * u + u - u * u * u * sin(10 * x);
 		}
 
-		// ÃÂÚÓ‰ –ÛÌ„Â- ÛÚÚ‡ 4-„Ó ÔÓˇ‰Í‡ ‰Îˇ ÓÒÌÓ‚ÌÓÈ Á‡‰‡˜Ë π1
+		// –ú–µ—Ç–æ–¥ –†—É–Ω–≥–µ-–ö—É—Ç—Ç–∞ 4-–≥–æ –ø–æ—Ä—è–¥–∫–∞ –¥–ª—è –æ—Å–Ω–æ–≤–Ω–æ–π –∑–∞–¥–∞—á–∏ ‚Ññ1
 		double RK4_main1(double x, double u, double h)
 		{
 			double v = u;
@@ -818,7 +761,7 @@ namespace Graph {
 			return v + (k1 + 2 * k2 + 2 * k3 + k4) / 6;
 		}
 
-		// ÃÂÚÓ‰ –ÛÌ„Â- ÛÚÚ‡ ‰Îˇ ÚÂÒÚÓ‚ÓÈ Á‡‰‡˜Ë
+		// –ú–µ—Ç–æ–¥ –†—É–Ω–≥–µ-–ö—É—Ç—Ç–∞ –¥–ª—è —Ç–µ—Å—Ç–æ–≤–æ–π –∑–∞–¥–∞—á–∏
 		double RK4_test(double x, double u, double h)
 		{
 			double v = u;
@@ -829,42 +772,58 @@ namespace Graph {
 
 			return v + (k1 + 2 * k2 + 2 * k3 + k4) / 6;
 		}
-		// ÃÂÚÓ‰ –ÛÌ„Â- ÛÚÚ‡ ‰Îˇ ÒËÒÚÂÏ˚ Û‡‚ÌÂÌËÈ ŒÒÌÓ‚ÌÓÈ Á‡‰‡˜Ë π2
+		// –ú–µ—Ç–æ–¥ –†—É–Ω–≥–µ-–ö—É—Ç—Ç–∞ –¥–ª—è —Å–∏—Å—Ç–µ–º—ã —É—Ä–∞–≤–Ω–µ–Ω–∏–π –û—Å–Ω–æ–≤–Ω–æ–π –∑–∞–¥–∞—á–∏ ‚Ññ2
 		void RK4_main2_system(double x, double% y1, double% y2, double h, double a, double b)
 		{
 			double k1_y1, k1_y2, k2_y1, k2_y2, k3_y1, k3_y2, k4_y1, k4_y2;
 			double f1, f2;
 
-			// œÂ‚˚È ÍÓ˝ÙÙËˆËÂÌÚ
+			// –ü–µ—Ä–≤—ã–π –∫–æ—ç—Ñ—Ñ–∏—Ü–∏–µ–Ω—Ç
 			f_main2_system(x, y1, y2, a, b, f1, f2);
 			k1_y1 = h * f1;
 			k1_y2 = h * f2;
 
-			// ¬ÚÓÓÈ ÍÓ˝ÙÙËˆËÂÌÚ
+			// –í—Ç–æ—Ä–æ–π –∫–æ—ç—Ñ—Ñ–∏—Ü–∏–µ–Ω—Ç
 			f_main2_system(x + h / 2, y1 + k1_y1 / 2, y2 + k1_y2 / 2, a, b, f1, f2);
 			k2_y1 = h * f1;
 			k2_y2 = h * f2;
 
-			// “ÂÚËÈ ÍÓ˝ÙÙËˆËÂÌÚ
+			// –¢—Ä–µ—Ç–∏–π –∫–æ—ç—Ñ—Ñ–∏—Ü–∏–µ–Ω—Ç
 			f_main2_system(x + h / 2, y1 + k2_y1 / 2, y2 + k2_y2 / 2, a, b, f1, f2);
 			k3_y1 = h * f1;
 			k3_y2 = h * f2;
 
-			// ◊ÂÚ‚ÂÚ˚È ÍÓ˝ÙÙËˆËÂÌÚ
+			// –ß–µ—Ç–≤–µ—Ä—Ç—ã–π –∫–æ—ç—Ñ—Ñ–∏—Ü–∏–µ–Ω—Ç
 			f_main2_system(x + h, y1 + k3_y1, y2 + k3_y2, a, b, f1, f2);
 			k4_y1 = h * f1;
 			k4_y2 = h * f2;
 
-			// Œ·ÌÓ‚ÎÂÌËÂ ÁÌ‡˜ÂÌËÈ
+			// –û–±–Ω–æ–≤–ª–µ–Ω–∏–µ –∑–Ω–∞—á–µ–Ω–∏–π
 			y1 = y1 + (k1_y1 + 2 * k2_y1 + 2 * k3_y1 + k4_y1) / 6;
 			y2 = y2 + (k1_y2 + 2 * k2_y2 + 2 * k3_y2 + k4_y2) / 6;
 		}
 
-		// œ‡‚‡ˇ ˜‡ÒÚ¸ ÒËÒÚÂÏ˚ ‰Îˇ ŒÒÌÓ‚ÌÓÈ Á‡‰‡˜Ë π2
+		// –ü—Ä–∞–≤–∞—è —á–∞—Å—Ç—å —Å–∏—Å—Ç–µ–º—ã –¥–ª—è –û—Å–Ω–æ–≤–Ω–æ–π –∑–∞–¥–∞—á–∏ ‚Ññ2
 		void f_main2_system(double x, double y1, double y2, double a, double b, double% f1, double% f2)
 		{
 			f1 = y2;  // du/dx = u'
 			f2 = -a * y2 * y2 - b * y1;  // du'/dx = -a*(u')^2 - b*u
+		}
+
+		void add_data_to_row(DataGridView^ grid, int row, double x0, double v, double v_half, double v_minus_v_half, double OLP, double h, int C1, int C2, double u, double u_minus_v)
+		{
+			grid->AllowUserToAddRows = false;
+			grid->Rows->Add();
+			grid->Rows[row]->Cells[0]->Value = Math::Round(x0, 3);
+			grid->Rows[row]->Cells[1]->Value = v;
+			grid->Rows[row]->Cells[2]->Value = v_half;
+			grid->Rows[row]->Cells[3]->Value = v_minus_v_half;
+			grid->Rows[row]->Cells[4]->Value = OLP;
+			grid->Rows[row]->Cells[5]->Value = h;
+			grid->Rows[row]->Cells[6]->Value = C1;
+			grid->Rows[row]->Cells[7]->Value = C2;
+			grid->Rows[row]->Cells[8]->Value = u;
+			grid->Rows[row]->Cells[9]->Value = u_minus_v;
 		}
 
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) //draw
@@ -872,14 +831,7 @@ namespace Graph {
 		GraphPane^ panel = zedGraphControl1->GraphPane;
 		panel->CurveList->Clear();
 
-		// ≈ÒÎË ‚˚·‡Ì‡ Á‡‰‡˜‡ 2, ËÒÔÓÎ¸ÁÛÂÏ ÒÔÂˆË‡Î¸ÌÛ˛ ÙÛÌÍˆË˛ ÔÓÒÚÓÂÌËˇ „‡ÙËÍÓ‚
-		if (radioButton3->Checked)
-		{
-			BuildMain2Graphs();
-			return;
-		}
-
-		// »ÌÚÂ‚‡Î, „‰Â ÂÒÚ¸ ‰‡ÌÌ˚Â
+		// –ò–Ω—Ç–µ—Ä–≤–∞–ª, –≥–¥–µ –µ—Å—Ç—å –¥–∞–Ω–Ω—ã–µ
 		double xmin = Convert::ToDouble(textBox1->Text);
 		double xmax = Convert::ToDouble(textBox2->Text);
 
@@ -888,62 +840,108 @@ namespace Graph {
 		double xmin_limit = xmin - 0.1;
 		double xmax_limit = xmax + 0.1;
 
-		PointPairList^ v_list = gcnew PointPairList();
-
-		for (int i = 0; i < dataGridView1->Rows->Count; i++)
+		// –ï—Å–ª–∏ –≤—ã–±—Ä–∞–Ω–∞ –∑–∞–¥–∞—á–∞ 2, –∏—Å–ø–æ–ª—å–∑—É–µ–º —Å–ø–µ—Ü–∏–∞–ª—å–Ω—É—é —Ñ—É–Ω–∫—Ü–∏—é –ø–æ—Å—Ç—Ä–æ–µ–Ω–∏—è –≥—Ä–∞—Ñ–∏–∫–æ–≤
+		if (radioButton3->Checked)
 		{
-			if (dataGridView1->Rows[i]->Cells[0] != nullptr && dataGridView1->Rows[i]->Cells[1] != nullptr)
+			String^ selectedGraph = comboBoxGraphType->Text;
+			double a_param = Convert::ToDouble(textBoxA->Text);
+			double b_param = Convert::ToDouble(textBoxB->Text);
+
+			if (selectedGraph == "(x, u1(x))")
 			{
-				double x_i = Convert::ToDouble(dataGridView1->Rows[i]->Cells[0]->Value);
-				double v_i = Convert::ToDouble(dataGridView1->Rows[i]->Cells[1]->Value);
+				String^ curveTitle = String::Format("Main Task 2 (a={0}, b={1}) - {2}", a_param, b_param, selectedGraph);
+				LineItem^ curve11 = panel->AddCurve(curveTitle, v1_list, Color::Blue, SymbolType::None);
+				curve11->Line->Width = 2.0f;
 
-				double c1 = 0.0, c2 = 0.0;
-				if (dataGridView1->Rows[i]->Cells[6]->Value != nullptr)
-					c1 = Convert::ToDouble(dataGridView1->Rows[i]->Cells[6]->Value);
+				panel->Title->Text = "Main Task 2: " + selectedGraph;
+				panel->XAxis->Title->Text = "x";
+				panel->YAxis->Title->Text = "u1(x)";
 
-				if ((c1 == 0.0 && c2 == 0.0))
-					v_list->Add(x_i, v_i);
+				panel->YAxis->Scale->Min = -1.0;
+				panel->YAxis->Scale->Max = 1.5;
 			}
-		}
-
-		LineItem^ Curve1 = panel->AddCurve("Numerical solution", v_list, Color::Red, SymbolType::HDash);
-		Curve1->Line->Width = 2.0f;
-
-		v_list->Sort();
-
-		if (radioButton1->Checked && checkBox2->Checked)
-		{
-			//panel->CurveList->Clear();
-			PointPairList^ u_list = gcnew PointPairList();
-
-			int N = Convert::ToInt32(textBox9->Text);
-			int n = 1;
-
-			double x0 = 0.0;
-			double u0 = Convert::ToDouble(textBox11->Text);
-
-			for (double x = xmin + h; x <= xmax + h / 1000.0; x += h)
+			else if (selectedGraph == "(x, u2(x))")
 			{
-				if (n >= N)
+				String^ curveTitle = String::Format("Main Task 2 (a={0}, b={1}) - {2}", a_param, b_param, selectedGraph);
+				LineItem^ curve22 = panel->AddCurve(curveTitle, v2_list, Color::Blue, SymbolType::None);
+				curve22->Line->Width = 2.0f;
+
+				panel->Title->Text = "Main Task 2: " + selectedGraph;
+				panel->XAxis->Title->Text = "x";
+				panel->YAxis->Title->Text = "u2(x)";
+
+				panel->YAxis->Scale->Min = -10;
+				panel->YAxis->Scale->Max = 10;
+			}
+			else if (selectedGraph == "(u1(x), u2(x))")
+			{
+				String^ curveTitle = String::Format("Main Task 2 (a={0}, b={1}) - {2}", a_param, b_param, selectedGraph);
+				LineItem^ curve12 = panel->AddCurve(curveTitle, v1_v2_list, Color::Blue, SymbolType::None);
+				curve12->Line->Width = 2.0f;
+
+				panel->Title->Text = "–§–∞–∑–æ–≤—ã–π –ø–æ—Ä—Ç—Ä–µ—Ç: u1(x) vs u2(x)";
+				panel->XAxis->Title->Text = "u1(x)";
+				panel->YAxis->Title->Text = "u2(x)";
+
+				panel->YAxis->Scale->Min = -10;
+				panel->YAxis->Scale->Max = 10;
+			}
+
+		}
+		else
+		{
+			LineItem^ Curve1 = panel->AddCurve("Numerical solution", v_list, Color::Red, SymbolType::HDash);
+			Curve1->Line->Width = 2.0f;
+
+			if (radioButton1->Checked && checkBox2->Checked)
+			{
+				//panel->CurveList->Clear();
+				PointPairList^ u_list = gcnew PointPairList();
+
+				int N = Convert::ToInt32(textBox9->Text);
+				int n = 1;
+
+				double x0 = 0.0;
+				double u0 = Convert::ToDouble(textBox11->Text);
+
+				h = 0.01;
+
+				for (double x = xmin + h; x <= xmax + h / 1000.0; x += h)
 				{
-					break;
+					if (n >= N)
+					{
+						break;
+					}
+					n++;
+
+					double u_i = u_test(x, u0);
+					u_list->Add(x, u_i);
 				}
-				n++;
+				u_list->Sort();
 
-				double u_i = u_test(x, u0);
-				u_list->Add(x, u_i);
+				LineItem^ Curve2 = panel->AddCurve("Exact solution", u_list, Color::Blue, SymbolType::HDash);
+				Curve2->Line->Width = 2.0f;
 			}
-			u_list->Sort();
 
-			LineItem^ Curve2 = panel->AddCurve("Exact solution", u_list, Color::Blue, SymbolType::HDash);
-			Curve2->Line->Width = 2.0f;
+			// –£—Å—Ç–∞–Ω–∞–≤–ª–∏–≤–∞–µ–º –∏–Ω—Ç–µ—Ä–≤–∞–ª –ø–æ –æ—Å—è–º
+			panel->XAxis->Scale->Min = xmin_limit;
+			panel->XAxis->Scale->Max = xmax_limit;
+			panel->XAxis->Title->Text = "x";
+			panel->YAxis->Title->Text = "v(x)";
+			if (radioButton2->Checked)
+			{
+				panel->YAxis->Scale->Min = 0;
+				panel->YAxis->Scale->Max = 10;
+			}
+			else
+			{
+				panel->YAxis->Scale->MinAuto = true;
+				panel->YAxis->Scale->MaxAuto = true;
+			}
 		}
-
-		// ”ÒÚ‡Ì‡‚ÎË‚‡ÂÏ ËÌÚÂ‚‡Î ÔÓ ÓÒˇÏ
+		
 		panel->XAxis->Scale->Min = xmin_limit;
 		panel->XAxis->Scale->Max = xmax_limit;
-		panel->XAxis->Title->Text = "x";
-		panel->YAxis->Title->Text = "v(x)";
 
 		zedGraphControl1->AxisChange();
 		zedGraphControl1->Invalidate();
@@ -958,11 +956,11 @@ namespace Graph {
 		GraphPane^ panel = zedGraphControl1->GraphPane;
 		double xmin = Convert::ToDouble(textBox1->Text);
 		double xmax = Convert::ToDouble(textBox2->Text);
-		// ”ÒÚ‡Ì‡‚ÎË‚‡ÂÏ ËÌÚÂÂÒÛ˛˘ËÈ Ì‡Ò ËÌÚÂ‚‡Î ÔÓ ÓÒË X
+		// –£—Å—Ç–∞–Ω–∞–≤–ª–∏–≤–∞–µ–º –∏–Ω—Ç–µ—Ä–µ—Å—É—é—â–∏–π –Ω–∞—Å –∏–Ω—Ç–µ—Ä–≤–∞–ª –ø–æ –æ—Å–∏ X
 		panel->XAxis->Scale->Min = xmin;
 		panel->XAxis->Scale->Max = xmax;
 		zedGraphControl1->AxisChange();
-		// Œ·ÌÓ‚ÎˇÂÏ „‡ÙËÍ
+		// –û–±–Ω–æ–≤–ª—è–µ–º –≥—Ä–∞—Ñ–∏–∫
 		zedGraphControl1->Invalidate();
 	}
 
@@ -977,65 +975,72 @@ namespace Graph {
 		double xmax = Convert::ToDouble(textBox2->Text);
 		double h = Convert::ToDouble(textBox3->Text);
 
-		if (radioButton1->Checked) // “ÂÒÚÓ‚‡ˇ Á‡‰‡˜‡
+
+		if (radioButton1->Checked) // –¢–µ—Å—Ç–æ–≤–∞—è –∑–∞–¥–∞—á–∞
 		{
 			if (checkBox1->Checked)
 			{
-				// — ÍÓÌÚÓÎÂÏ ÔÓ„Â¯ÌÓÒÚË
-				dataGridView1->AllowUserToAddRows = false;
+				// –° –∫–æ–Ω—Ç—Ä–æ–ª–µ–º –ø–æ–≥—Ä–µ—à–Ω–æ—Å—Ç–∏
 				dataGridView1->Rows->Clear();
-				dataGridView1->Rows->Add();
-				dataGridView1->Rows[0]->Cells[0]->Value = Math::Round(x0, 3);
-				dataGridView1->Rows[0]->Cells[1]->Value = v;
-				dataGridView1->Rows[0]->Cells[2]->Value = v_half;
-				dataGridView1->Rows[0]->Cells[3]->Value = 0.0;
-				dataGridView1->Rows[0]->Cells[4]->Value = 0.0;
-				dataGridView1->Rows[0]->Cells[5]->Value = 0.0;
-				dataGridView1->Rows[0]->Cells[6]->Value = 0.0;
-				dataGridView1->Rows[0]->Cells[7]->Value = 0.0;
-				dataGridView1->Rows[0]->Cells[8]->Value = u_test(x0, u0);
-				dataGridView1->Rows[0]->Cells[9]->Value = 0.0;
+				v_list->Clear();
 
-				// —ÔËÒÓÍ ÚÓ˜ÂÍ
+				add_data_to_row(dataGridView1, 0, x0, v, v_half, 0.0, 0.0, 0.0, 0, 0, u_test(x0, u0), 0.0);
+				v_list->Add(x0, v);
+
+				// –°–ø–∏—Å–æ–∫ —Ç–æ—á–µ–∫
 				double eps = Convert::ToDouble(textBox8->Text);
-				int i = 1;
 				int N = Convert::ToInt32(textBox9->Text);
-				int n = 1;
+				
 				double a = Math::Pow(2, 4);
+				int i = 1;
+				int n = 1;
+
+				// –î–õ–Ø –°–¢–ê–¢–ò–°–¢–ò–ö–ò
+				double max_olp = 0.0;
+				double max_h = h;
+				double min_h = h;
+				double x_max_h = xmin + h;
+				double x_min_h = xmin + h;
+				double max_abs_error = 0.0;
+				double x_max_abs_error = x0;
+				
 				int count_c1 = 0; //div
 				int count_c2 = 0; //mult
 
-				double x = xmin + h;
+				double x = xmin;
+				double next_x = xmin + h;
 
-				while (x <= xmax + h / 1000.0 && n < N)
+				while (next_x <= xmax + h / 1000.0 && n < N)
 				{
-					double u_i = u_test(x, u0);
+					double u_i = u_test(next_x, u0);
+					double v1 = RK4_test(x, v, h);
 
-					double v1 = RK4_test(x - h, v, h);
-
-					double tmp = RK4_test(x - h, v_half, h / 2);
-					double v2 = RK4_test(x - h + h / 2, tmp, h / 2);
+					double tmp = RK4_test(x, v_half, h / 2);
+					double v2 = RK4_test(x + h / 2, tmp, h / 2);
 
 					double s = Math::Abs(v2 - v1) / (a - 1);
+
+					// –û–ë–ù–û–í–õ–Ø–ï–ú –°–¢–ê–¢–ò–°–¢–ò–ö–£
+					if (s * a > max_olp) max_olp = s * a;
+					if (h > max_h) { max_h = h; x_max_h = next_x; }
+					if (h < min_h) { min_h = h; x_min_h = next_x; }
+					double current_abs_error = Math::Abs(u_i - v1);
+					if (current_abs_error > max_abs_error) {
+						max_abs_error = current_abs_error;
+						x_max_abs_error = next_x;
+					}
 
 					if ((s >= (eps / Math::Pow(2, 5))) && (s <= eps))
 					{
 						v = v1;
 						v_half = v2;
 
-						dataGridView1->Rows->Add();
-						dataGridView1->Rows[i]->Cells[0]->Value = Math::Round(x, 3);
-						dataGridView1->Rows[i]->Cells[1]->Value = v;
-						dataGridView1->Rows[i]->Cells[2]->Value = v_half;
-						dataGridView1->Rows[i]->Cells[3]->Value = v - v_half;
-						dataGridView1->Rows[i]->Cells[4]->Value = s * a;
-						dataGridView1->Rows[i]->Cells[5]->Value = h;
-						dataGridView1->Rows[i]->Cells[6]->Value = 0.0;
-						dataGridView1->Rows[i]->Cells[7]->Value = 0.0;
-						dataGridView1->Rows[i]->Cells[8]->Value = u_i;
-						dataGridView1->Rows[i]->Cells[9]->Value = Math::Abs(u_i - v);
+						v_list->Add(next_x, v);
+						add_data_to_row(dataGridView1, i, next_x, v, v_half, v - v_half, s * a, h, 0, 0, u_i, Math::Abs(u_i - v));
 
-						x += h;
+						x = next_x;
+						next_x = x + h;
+						//x += h;
 						n++;
 						i++;
 					}
@@ -1044,44 +1049,27 @@ namespace Graph {
 						v = v1;
 						v_half = v2;
 
-						dataGridView1->Rows->Add();
-						dataGridView1->Rows[i]->Cells[0]->Value = Math::Round(x, 3);
-						dataGridView1->Rows[i]->Cells[1]->Value = v;
-						dataGridView1->Rows[i]->Cells[2]->Value = v_half;
-						dataGridView1->Rows[i]->Cells[3]->Value = v - v_half;
-						dataGridView1->Rows[i]->Cells[4]->Value = s * a;
-						dataGridView1->Rows[i]->Cells[5]->Value = h;
-						dataGridView1->Rows[i]->Cells[6]->Value = 0.0;
-						dataGridView1->Rows[i]->Cells[7]->Value = 1.0;
-						dataGridView1->Rows[i]->Cells[8]->Value = u_i;
-						dataGridView1->Rows[i]->Cells[9]->Value = Math::Abs(u_i - v);
+						v_list->Add(next_x, v);
+						add_data_to_row(dataGridView1, i, next_x, v, v_half, v - v_half, s * a, h, 0, 1, u_i, Math::Abs(u_i - v));
 
+						x = next_x;
 						h *= 2;
+
+						next_x = x + h;
 						count_c2++;
-						x += h;
+						//x += h;
 						n++;
 						i++;
 					}
 					else if (s > eps)
 					{
-						dataGridView1->Rows->Add();
-						dataGridView1->Rows[i]->Cells[0]->Value = Math::Round(x, 3);
-						dataGridView1->Rows[i]->Cells[1]->Value = v;
-						dataGridView1->Rows[i]->Cells[2]->Value = v_half;
-						dataGridView1->Rows[i]->Cells[3]->Value = v - v_half;
-						dataGridView1->Rows[i]->Cells[4]->Value = s * a;
-						dataGridView1->Rows[i]->Cells[5]->Value = h;
-						dataGridView1->Rows[i]->Cells[6]->Value = 1.0;
-						dataGridView1->Rows[i]->Cells[7]->Value = 0.0;
-						dataGridView1->Rows[i]->Cells[8]->Value = u_i;
-						dataGridView1->Rows[i]->Cells[9]->Value = Math::Abs(u_i - v);
+						add_data_to_row(dataGridView1, i, next_x, v1, v2, v1 - v2, s * a, h, 1, 0, u_i, Math::Abs(u_i - v));
 
 						i++;
 
 						h /= 2;
+						next_x = x + h;
 						count_c1++;
-
-						continue;
 					}
 				}
 
@@ -1092,98 +1080,29 @@ namespace Graph {
 					x_n = Convert::ToDouble(lastCell->Value);
 				}
 
-				double max_olp = Math::Abs(Convert::ToDouble(dataGridView1->Rows[0]->Cells[4]->Value));
-
-				double max_U = Convert::ToDouble(dataGridView1->Rows[0]->Cells[8]->Value);
-				double max_V_1 = Convert::ToDouble(dataGridView1->Rows[0]->Cells[1]->Value);
-				double max_abs_error = Math::Abs(max_U - max_V_1);
-				double x_max_abs_error = Convert::ToDouble(dataGridView1->Rows[0]->Cells[0]->Value);
-
-				double max_h = Convert::ToDouble(dataGridView1->Rows[0]->Cells[5]->Value);
-				double x_max_h = Convert::ToDouble(dataGridView1->Rows[0]->Cells[0]->Value);
-
-				double min_h = Convert::ToDouble(dataGridView1->Rows[0]->Cells[5]->Value);
-				double x_min_h = Convert::ToDouble(dataGridView1->Rows[0]->Cells[0]->Value);
-
-				for (int i = 1; i < dataGridView1->RowCount; i++)
-				{
-					double c1 = Convert::ToDouble(dataGridView1->Rows[i]->Cells[6]->Value);
-					if (c1 == 0.0)
-					{
-
-						double m = Math::Abs(Convert::ToDouble(dataGridView1->Rows[i]->Cells[4]->Value));
-
-						double m_U = Convert::ToDouble(dataGridView1->Rows[i]->Cells[8]->Value);
-						double m_V_1 = Convert::ToDouble(dataGridView1->Rows[i]->Cells[1]->Value);
-						double m_abs_error = Math::Abs(m_U - m_V_1);
-						double x_m_abs_error = Convert::ToDouble(dataGridView1->Rows[i]->Cells[0]->Value);
-
-						double ma_h = Convert::ToDouble(dataGridView1->Rows[i]->Cells[5]->Value);
-						double x_ma_h = Convert::ToDouble(dataGridView1->Rows[i]->Cells[0]->Value);
-						double mi_h = Convert::ToDouble(dataGridView1->Rows[i]->Cells[5]->Value);
-						double x_mi_h = Convert::ToDouble(dataGridView1->Rows[i]->Cells[0]->Value);
-
-
-
-						if (m > max_olp)
-						{
-							max_olp = m;
-						}
-
-						if (m_abs_error > max_abs_error)
-						{
-							max_abs_error = m_abs_error;
-							x_max_abs_error = x_m_abs_error;
-						}
-
-						if (ma_h > max_h)
-						{
-							max_h = ma_h;
-							x_max_h = x_ma_h;
-						}
-
-						if (mi_h < min_h)
-						{
-							min_h = mi_h;
-							x_min_h = x_mi_h;
-						}
-
-					}
-				}
-
 				//results
-				textBox12->Text = L"Results:";
+				textBox12->Text = L"–†–µ–∑—É–ª—å—Ç–∞—Ç—ã:";
 				textBox12->AppendText(String::Format("\r\nn = {0}", n));
 				textBox12->AppendText(String::Format("\r\nb - x_n = {0}", xmax - x_n));
-				textBox12->AppendText(String::Format("\r\nMax OLP = {0}", max_olp));
-				textBox12->AppendText(String::Format("\r\nCount c1 = {0}", count_c1));
-				textBox12->AppendText(String::Format("\r\nCount c2 = {0}", count_c2));
-				textBox12->AppendText(String::Format("\r\nMax h_i = {0} in x = {1}", max_h, x_max_h));
-				textBox12->AppendText(String::Format("\r\nMin h_i = {0} in x = {1}", min_h, x_min_h));
-				textBox12->AppendText(String::Format("\r\nMax |U_i - V1_i| = {0} in x = {1}", max_abs_error, x_max_abs_error));
-
-				zedGraphControl1->Invalidate();
+				textBox12->AppendText(String::Format("\r\n–ú–∞–∫—Å –û–õ–ü = {0}", max_olp));
+				textBox12->AppendText(String::Format("\r\n–ß–∏—Å–ª–æ –¥–µ–ª–µ–Ω–∏–π —à–∞–≥–∞ = {0}", count_c1));
+				textBox12->AppendText(String::Format("\r\n–ß–∏—Å–ª–æ —É–º–Ω–æ–∂–µ–Ω–∏–π —à–∞–≥–∞ c2 = {0}", count_c2));
+				textBox12->AppendText(String::Format("\r\n–ú–∞–∫—Å h_i = {0} –≤ x = {1}", max_h, Math::Round(x_max_h, 3)));
+				textBox12->AppendText(String::Format("\r\n–ú–∏–Ω h_i = {0} –≤ x = {1}", min_h, Math::Round(x_min_h, 3)));
+				textBox12->AppendText(String::Format("\r\n–ú–∞–∫—Å |U_i - V1_i| = {0} –≤ x = {1}", max_abs_error, Math::Round(x_max_abs_error, 3)));
 			}
 			else
 			{
-				// ¡ÂÁ ÍÓÌÚÓÎˇ ÔÓ„Â¯ÌÓÒÚË
-				dataGridView1->AllowUserToAddRows = false;
+				// –ë–µ–∑ –∫–æ–Ω—Ç—Ä–æ–ª—è –ø–æ–≥—Ä–µ—à–Ω–æ—Å—Ç–∏
 				dataGridView1->Rows->Clear();
-				dataGridView1->Rows->Add();
-				dataGridView1->Rows[0]->Cells[0]->Value = Math::Round(x0, 3);
-				dataGridView1->Rows[0]->Cells[8]->Value = u_test(x0, u0);
-				dataGridView1->Rows[0]->Cells[1]->Value = v;
-				dataGridView1->Rows[0]->Cells[2]->Value = v_half;
-				dataGridView1->Rows[0]->Cells[3]->Value = 0.0;
-				dataGridView1->Rows[0]->Cells[4]->Value = 0.0;
-				dataGridView1->Rows[0]->Cells[5]->Value = 0.0;
-				dataGridView1->Rows[0]->Cells[9]->Value = 0.0;
-				dataGridView1->Rows[0]->Cells[6]->Value = 0.0;
-				dataGridView1->Rows[0]->Cells[7]->Value = 0.0;
+				v_list->Clear();
+				add_data_to_row(dataGridView1, 0, x0, v, v_half, 0.0, 0.0, 0.0, 0, 0, u_test(x0, u0), 0.0);
+				v_list->Add(x0, v);
 
-				// —ÔËÒÓÍ ÚÓ˜ÂÍ
-				int i = 1;
+				// –°–ø–∏—Å–æ–∫ —Ç–æ—á–µ–∫
 				int N = Convert::ToInt32(textBox9->Text);
+				
+				int i = 1;
 				int n = 1;
 				double a = Math::Pow(2, 4);
 				for (double x = xmin + h; x <= xmax + h / 1000.0; x += h)
@@ -1193,13 +1112,8 @@ namespace Graph {
 						break;
 					}
 					n++;
-					dataGridView1->Rows->Add();
-					dataGridView1->Rows[i]->Cells[0]->Value = Math::Round(x, 3);
-					dataGridView1->Rows[i]->Cells[6]->Value = 0.0;
-					dataGridView1->Rows[i]->Cells[7]->Value = 0.0;
 
 					double u_i = u_test(x, u0);
-					dataGridView1->Rows[i]->Cells[8]->Value = u_i;
 
 					v = RK4_test(x - h, v, h);
 
@@ -1208,12 +1122,9 @@ namespace Graph {
 
 					double s = Math::Abs(v_half - v) / (a - 1);
 
-					dataGridView1->Rows[i]->Cells[5]->Value = h;
-					dataGridView1->Rows[i]->Cells[1]->Value = v;
-					dataGridView1->Rows[i]->Cells[2]->Value = v_half;
-					dataGridView1->Rows[i]->Cells[3]->Value = v - v_half;
-					dataGridView1->Rows[i]->Cells[4]->Value = s * a;
-					dataGridView1->Rows[i]->Cells[9]->Value = Math::Abs(u_i - v);
+					v_list->Add(x, v);
+
+					add_data_to_row(dataGridView1, i, x, v, v_half, v - v_half, s * a, h, 0, 0, u_i, Math::Abs(u_i - v));
 
 					++i;
 				}
@@ -1255,48 +1166,33 @@ namespace Graph {
 				}
 
 				//results
-				textBox12->Text = L"Results:";
+				textBox12->Text = L"–†–µ–∑—É–ª—å—Ç–∞—Ç—ã:";
 				textBox12->AppendText(String::Format("\r\nn = {0}", n));
 				textBox12->AppendText(String::Format("\r\nb - x_n = {0}", xmax - x_n));
-				textBox12->AppendText(String::Format("\r\nMax OLP = {0}", max_olp));
-				textBox12->AppendText(String::Format("\r\nMax |U_i - V1_i| = {0} in x = {1}", max_abs_error, x_max_abs_error));
+				textBox12->AppendText(String::Format("\r\n–ú–∞–∫—Å –û–õ–ü = {0}", max_olp));
+				textBox12->AppendText(String::Format("\r\n–º–∞–∫—Å |U_i - V1_i| = {0} –≤ x = {1}", max_abs_error, Math::Round(x_max_abs_error, 3)));
 
-				zedGraphControl1->Invalidate();
+				//zedGraphControl1->Invalidate();
 			}
 		}
-		else if (radioButton2->Checked) // ŒÒÌÓ‚Ì‡ˇ Á‡‰‡˜‡ 1
+		else if (radioButton2->Checked) // –û—Å–Ω–æ–≤–Ω–∞—è –∑–∞–¥–∞—á–∞ 1
 		{
 			if (checkBox1->Checked)
 			{
-				// — ÍÓÌÚÓÎÂÏ ÔÓ„Â¯ÌÓÒÚË ‰Îˇ ÓÒÌÓ‚ÌÓÈ Á‡‰‡˜Ë
-				dataGridView1->AllowUserToAddRows = false;
+				// –° –∫–æ–Ω—Ç—Ä–æ–ª–µ–º –ø–æ–≥—Ä–µ—à–Ω–æ—Å—Ç–∏ –¥–ª—è –æ—Å–Ω–æ–≤–Ω–æ–π –∑–∞–¥–∞—á–∏
 				dataGridView1->Rows->Clear();
-				dataGridView1->Rows->Add();
+				v_list->Clear();
+				add_data_to_row(dataGridView1, 0, x0, v, v_half, 0.0, 0.0, h, 0, 0, 0.0, 0.0);
+				v_list->Add(x0, v);
 
-				// Õ¿◊¿À‹Õ¿ﬂ “Œ◊ ¿
-				dataGridView1->Rows[0]->Cells[0]->Value = Math::Round(x0, 3); // X
-				dataGridView1->Rows[0]->Cells[1]->Value = v;                  // V_1
-				dataGridView1->Rows[0]->Cells[2]->Value = v_half;             // V_2
-				dataGridView1->Rows[0]->Cells[3]->Value = 0.0;                // V_1_minus_V_2
-				dataGridView1->Rows[0]->Cells[4]->Value = 0.0;                // OLP
-				dataGridView1->Rows[0]->Cells[5]->Value = h;                  // h
-				dataGridView1->Rows[0]->Cells[6]->Value = 0.0;                // C1 (ÙÎ‡„ ÛÏÂÌ¸¯ÂÌËˇ ¯‡„‡)
-				dataGridView1->Rows[0]->Cells[7]->Value = 0.0;                // C2 (ÙÎ‡„ Û‚ÂÎË˜ÂÌËˇ ¯‡„‡)
-				dataGridView1->Rows[0]->Cells[8]->Value = 0.0;                // U (ÌÂÚ ÚÓ˜ÌÓ„Ó Â¯ÂÌËˇ)
-				dataGridView1->Rows[0]->Cells[9]->Value = 0.0;                // U_minus_V_1
-
-				// œ‡‡ÏÂÚ˚
+				// –ü–∞—Ä–∞–º–µ—Ç—Ä—ã
 				double eps = Convert::ToDouble(textBox8->Text);
 				int i = 1;
 				int N = Convert::ToInt32(textBox9->Text);
 				int n = 1;
 				double a = Math::Pow(2, 4);
-				int count_c1 = 0; // Ò˜ÂÚ˜ËÍ ÛÏÂÌ¸¯ÂÌËÈ ¯‡„‡
-				int count_c2 = 0; // Ò˜ÂÚ˜ËÍ Û‚ÂÎË˜ÂÌËÈ ¯‡„‡
 
-				double x = xmin + h;
-
-				// ƒÀﬂ —“¿“»—“» »
+				// –î–õ–Ø –°–¢–ê–¢–ò–°–¢–ò–ö–ò
 				double max_olp = 0.0;
 				double max_h = h;
 				double min_h = h;
@@ -1305,26 +1201,32 @@ namespace Graph {
 				double max_abs_error = 0.0;
 				double x_max_abs_error = x0;
 
-				// ƒÀﬂ √–¿‘» Œ¬
-				PointPairList^ points_V1 = gcnew PointPairList();
-				PointPairList^ points_V2 = gcnew PointPairList();
-				PointPairList^ points_error = gcnew PointPairList();
+				int count_c1 = 0; // —Å—á–µ—Ç—á–∏–∫ —É–º–µ–Ω—å—à–µ–Ω–∏–π —à–∞–≥–∞
+				int count_c2 = 0; // —Å—á–µ—Ç—á–∏–∫ —É–≤–µ–ª–∏—á–µ–Ω–∏–π —à–∞–≥–∞
 
-				points_V1->Add(x0, v);
-				points_V2->Add(x0, v_half);
-				points_error->Add(x0, 0.0);
+				double x = xmin;
+				double next_x = xmin + h;
 
-				while (x <= xmax + h / 1000.0 && n < N)
+				while (next_x <= xmax + h / 1000.0 && n < N)
 				{
-					// ¬˚˜ËÒÎˇÂÏ Â¯ÂÌËˇ
-					double v1 = RK4_main1(x - h, v, h);
-					double tmp = RK4_main1(x - h, v_half, h / 2);
-					double v2 = RK4_main1(x - h + h / 2, tmp, h / 2);
+					if (h < 1e-7)
+					{
+						break;
+					}
 
-					double s = Math::Abs(v2 - v1) / (a - 1); // ÎÓÍ‡Î¸Ì‡ˇ ÔÓ„Â¯ÌÓÒÚ¸
-					double scaled_error = s * a; // ÓˆÂÌÍ‡ ÔÓ„Â¯ÌÓÒÚË
+					// –í—ã—á–∏—Å–ª—è–µ–º —Ä–µ—à–µ–Ω–∏—è
+					double v1 = RK4_main1(x, v, h);
+					if (v1 > 1000) {
+						break;
+					}
 
-					// Œ¡ÕŒ¬Àﬂ≈Ã —“¿“»—“» ”
+					double tmp = RK4_main1(x, v_half, h / 2);
+					double v2 = RK4_main1(x + h / 2, tmp, h / 2);
+
+					double s = Math::Abs(v2 - v1) / (a - 1); // –ª–æ–∫–∞–ª—å–Ω–∞—è –ø–æ–≥—Ä–µ—à–Ω–æ—Å—Ç—å
+					double scaled_error = s * a; // –æ—Ü–µ–Ω–∫–∞ –ø–æ–≥—Ä–µ—à–Ω–æ—Å—Ç–∏
+
+					// –û–ë–ù–û–í–õ–Ø–ï–ú –°–¢–ê–¢–ò–°–¢–ò–ö–£
 					if (scaled_error > max_olp) max_olp = scaled_error;
 					if (h > max_h) { max_h = h; x_max_h = x; }
 					if (h < min_h) { min_h = h; x_min_h = x; }
@@ -1336,90 +1238,50 @@ namespace Graph {
 
 					if ((s >= (eps / Math::Pow(2, 5))) && (s <= eps))
 					{
-						// ÿ‡„ ÔËÌËÏ‡ÂÚÒˇ ·ÂÁ ËÁÏÂÌÂÌËˇ
+						// –®–∞–≥ –ø—Ä–∏–Ω–∏–º–∞–µ—Ç—Å—è –±–µ–∑ –∏–∑–º–µ–Ω–µ–Ω–∏—è
 						v = v1;
 						v_half = v2;
 
-						dataGridView1->Rows->Add();
-						dataGridView1->Rows[i]->Cells[0]->Value = Math::Round(x, 3); // X
-						dataGridView1->Rows[i]->Cells[1]->Value = v;                  // V_1
-						dataGridView1->Rows[i]->Cells[2]->Value = v_half;             // V_2
-						dataGridView1->Rows[i]->Cells[3]->Value = v - v_half;         // V_1_minus_V_2
-						dataGridView1->Rows[i]->Cells[4]->Value = scaled_error;       // OLP
-						dataGridView1->Rows[i]->Cells[5]->Value = h;                  // h
-						dataGridView1->Rows[i]->Cells[6]->Value = 0.0;                // C1 = 0 (·ÂÁ ÛÏÂÌ¸¯ÂÌËˇ)
-						dataGridView1->Rows[i]->Cells[7]->Value = 0.0;                // C2 = 0 (·ÂÁ Û‚ÂÎË˜ÂÌËˇ)
-						dataGridView1->Rows[i]->Cells[8]->Value = 0.0;                // U
-						dataGridView1->Rows[i]->Cells[9]->Value = 0.0;                // U_minus_V_1
+						add_data_to_row(dataGridView1, i, next_x, v, v_half, v - v_half, scaled_error, h, 0, 0, 0.0, 0.0);
+						v_list->Add(next_x, v);
 
-						// ƒŒ¡¿¬Àﬂ≈Ã “Œ◊ » Õ¿ √–¿‘» »
-						points_V1->Add(x, v);
-						points_V2->Add(x, v_half);
-						points_error->Add(x, scaled_error);
-
-						x += h;
+						x = next_x;
+						next_x = x + h;
+						//x += h;
 						n++;
 						i++;
 					}
 					else if (s < (eps / Math::Pow(2, 5)))
 					{
-						// ”‚ÂÎË˜Ë‚‡ÂÏ ¯‡„
+						// –£–≤–µ–ª–∏—á–∏–≤–∞–µ–º —à–∞–≥
 						v = v1;
 						v_half = v2;
 
-						dataGridView1->Rows->Add();
-						dataGridView1->Rows[i]->Cells[0]->Value = Math::Round(x, 3); // X
-						dataGridView1->Rows[i]->Cells[1]->Value = v;                  // V_1
-						dataGridView1->Rows[i]->Cells[2]->Value = v_half;             // V_2
-						dataGridView1->Rows[i]->Cells[3]->Value = v - v_half;         // V_1_minus_V_2
-						dataGridView1->Rows[i]->Cells[4]->Value = scaled_error;       // OLP
-						dataGridView1->Rows[i]->Cells[5]->Value = h;                  // h
-						dataGridView1->Rows[i]->Cells[6]->Value = 0.0;                // C1 = 0 (·ÂÁ ÛÏÂÌ¸¯ÂÌËˇ)
-						dataGridView1->Rows[i]->Cells[7]->Value = 1.0;                // C2 = 1 (ÙÎ‡„ Û‚ÂÎË˜ÂÌËˇ)
-						dataGridView1->Rows[i]->Cells[8]->Value = 0.0;                // U
-						dataGridView1->Rows[i]->Cells[9]->Value = 0.0;                // U_minus_V_1
+						add_data_to_row(dataGridView1, i, next_x, v, v_half, v - v_half, scaled_error, h, 0, 1, 0.0, 0.0);
+						v_list->Add(next_x, v);
 
-						// ƒŒ¡¿¬Àﬂ≈Ã “Œ◊ » Õ¿ √–¿‘» »
-						points_V1->Add(x, v);
-						points_V2->Add(x, v_half);
-						points_error->Add(x, scaled_error);
-
+						x = next_x;
 						h *= 2;
+
+						next_x = x + h;
 						count_c2++;
-						x += h;
+						//x += h;
 						n++;
 						i++;
 					}
 					else if (s > eps)
 					{
-						// ”ÏÂÌ¸¯‡ÂÏ ¯‡„
-						dataGridView1->Rows->Add();
-						dataGridView1->Rows[i]->Cells[0]->Value = Math::Round(x, 3); // X
-						dataGridView1->Rows[i]->Cells[1]->Value = v;                  // V_1
-						dataGridView1->Rows[i]->Cells[2]->Value = v_half;             // V_2
-						dataGridView1->Rows[i]->Cells[3]->Value = v - v_half;         // V_1_minus_V_2
-						dataGridView1->Rows[i]->Cells[4]->Value = scaled_error;       // OLP
-						dataGridView1->Rows[i]->Cells[5]->Value = h;                  // h
-						dataGridView1->Rows[i]->Cells[6]->Value = 1.0;                // C1 = 1 (ÙÎ‡„ ÛÏÂÌ¸¯ÂÌËˇ)
-						dataGridView1->Rows[i]->Cells[7]->Value = 0.0;                // C2 = 0 (·ÂÁ Û‚ÂÎË˜ÂÌËˇ)
-						dataGridView1->Rows[i]->Cells[8]->Value = 0.0;                // U
-						dataGridView1->Rows[i]->Cells[9]->Value = 0.0;                // U_minus_V_1
-
-						// ƒŒ¡¿¬Àﬂ≈Ã “Œ◊ » Õ¿ √–¿‘» » (‰‡ÊÂ ÔË ÌÂÛ‰‡˜ÌÓÏ ¯‡„Â)
-						points_V1->Add(x, v);
-						points_V2->Add(x, v_half);
-						points_error->Add(x, scaled_error);
+						// –£–º–µ–Ω—å—à–∞–µ–º —à–∞–≥
+						add_data_to_row(dataGridView1, i, next_x, v, v_half, v - v_half, scaled_error, h, 1, 0, 0.0, 0.0);
 
 						i++;
 						h /= 2;
+						next_x = x + h;
 						count_c1++;
-						continue;
 					}
-					
-
 				}
 
-				// ¬˚˜ËÒÎÂÌËÂ x_n
+				// –í—ã—á–∏—Å–ª–µ–Ω–∏–µ x_n
 				double x_n = 0;
 				DataGridViewCell^ lastCell = dataGridView1->Rows[dataGridView1->RowCount - 1]->Cells[0];
 				if (lastCell->Value != nullptr)
@@ -1427,51 +1289,25 @@ namespace Graph {
 					x_n = Convert::ToDouble(lastCell->Value);
 				}
 
-				// œŒ—“–Œ≈Õ»≈ √–¿‘» Œ¬
-				GraphPane^ pane = zedGraphControl1->GraphPane;
-				pane->CurveList->Clear();
-
-
-				// Õ‡ÒÚÓÈÍ‡ „‡ÙËÍ‡
-				pane->Title->Text = "ŒÒÌÓ‚Ì‡ˇ Á‡‰‡˜‡ - Â¯ÂÌËÂ Ò ÍÓÌÚÓÎÂÏ ÔÓ„Â¯ÌÓÒÚË";
-				pane->XAxis->Title->Text = "x";
-				pane->YAxis->Title->Text = "y(x)";
-				pane->Legend->IsVisible = true;
-				pane->Legend->Position = LegendPos::TopCenter;
-
-				// Œ·ÌÓ‚ÎÂÌËÂ „‡ÙËÍ‡
-				zedGraphControl1->AxisChange();
-				zedGraphControl1->Invalidate();
-
-				// ¬€¬Œƒ –≈«”À‹“¿“Œ¬
-				textBox12->Text = L"Results:";
+				// –í–´–í–û–î –†–ï–ó–£–õ–¨–¢–ê–¢–û–í
+				textBox12->Text = L"–†–µ–∑—É–ª—å—Ç–∞—Ç—ã:";
 				textBox12->AppendText(String::Format("\r\nn = {0}", n));
 				textBox12->AppendText(String::Format("\r\nb - x_n = {0}", xmax - x_n));
-				textBox12->AppendText(String::Format("\r\nMax OLP = {0}", max_olp));
-				textBox12->AppendText(String::Format("\r\nCount c1 = {0}", count_c1));
-				textBox12->AppendText(String::Format("\r\nCount c2 = {0}", count_c2));
-				textBox12->AppendText(String::Format("\r\nMax h_i = {0} in x = {1}", max_h, x_max_h));
-				textBox12->AppendText(String::Format("\r\nMin h_i = {0} in x = {1}", min_h, x_min_h));
-				textBox12->AppendText(String::Format("\r\nMax |U_i - V1_i| = {0} in x = {1}", max_abs_error, x_max_abs_error));
-				
+				textBox12->AppendText(String::Format("\r\n–ú–∞–∫—Å OLP = {0}", max_olp));
+				textBox12->AppendText(String::Format("\r\n–ß–∏—Å–ª–æ –¥–µ–ª–µ–Ω–∏–π —à–∞–≥–∞ = {0}", count_c1));
+				textBox12->AppendText(String::Format("\r\n–ß–∏—Å–ª–æ —É–º–Ω–æ–∂–µ–Ω–∏–π —à–∞–≥–∞ = {0}", count_c2));
+				textBox12->AppendText(String::Format("\r\n–ú–∞–∫—Å h_i = {0} –≤ x = {1}", max_h, Math::Round(x_max_h, 3)));
+				textBox12->AppendText(String::Format("\r\n–ú–∏–Ω h_i = {0} –≤ x = {1}", min_h, Math::Round(x_min_h, 3)));
 			}
-			else {
-				// ¡ÂÁ ÍÓÌÚÓÎˇ ÔÓ„Â¯ÌÓÒÚË ‰Îˇ ÓÒÌÓ‚ÌÓÈ Á‡‰‡˜Ë 1
-				dataGridView1->AllowUserToAddRows = false;
+			else
+			{
+				// –ë–µ–∑ –∫–æ–Ω—Ç—Ä–æ–ª—è –ø–æ–≥—Ä–µ—à–Ω–æ—Å—Ç–∏ –¥–ª—è –æ—Å–Ω–æ–≤–Ω–æ–π –∑–∞–¥–∞—á–∏ 1
 				dataGridView1->Rows->Clear();
-				dataGridView1->Rows->Add();
-				dataGridView1->Rows[0]->Cells[0]->Value = Math::Round(x0, 3);
-				dataGridView1->Rows[0]->Cells[1]->Value = v;
-				dataGridView1->Rows[0]->Cells[2]->Value = v_half;
-				dataGridView1->Rows[0]->Cells[3]->Value = 0.0;
-				dataGridView1->Rows[0]->Cells[4]->Value = 0.0;
-				dataGridView1->Rows[0]->Cells[5]->Value = 0.0;
-				dataGridView1->Rows[0]->Cells[6]->Value = 0.0;
-				dataGridView1->Rows[0]->Cells[7]->Value = 0.0;
-				dataGridView1->Rows[0]->Cells[8]->Value = 0.0; // ÕÂÚ ÚÓ˜ÌÓ„Ó Â¯ÂÌËˇ
-				dataGridView1->Rows[0]->Cells[9]->Value = 0.0;
+				v_list->Clear();
+				add_data_to_row(dataGridView1, 0, x0, v, v_half, 0.0, 0.0, 0.0, 0, 0, 0.0, 0.0);
+				v_list->Add(x0, v);
 
-				// —ÔËÒÓÍ ÚÓ˜ÂÍ
+				// –°–ø–∏—Å–æ–∫ —Ç–æ—á–µ–∫
 				int i = 1;
 				int N = Convert::ToInt32(textBox9->Text);
 				int n = 1;
@@ -1484,27 +1320,22 @@ namespace Graph {
 						break;
 					}
 					n++;
-					dataGridView1->Rows->Add();
-					dataGridView1->Rows[i]->Cells[0]->Value = Math::Round(x, 3);
-					dataGridView1->Rows[i]->Cells[6]->Value = 0.0;
-					dataGridView1->Rows[i]->Cells[7]->Value = 0.0;
 
-					// ¬˚˜ËÒÎˇÂÏ ÔË·ÎËÊÂÌÌÓÂ Â¯ÂÌËÂ
+					// –í—ã—á–∏—Å–ª—è–µ–º –ø—Ä–∏–±–ª–∏–∂–µ–Ω–Ω–æ–µ —Ä–µ—à–µ–Ω–∏–µ
 					v = RK4_main1(x - h, v, h);
 
-					// ¬˚˜ËÒÎˇÂÏ Â¯ÂÌËÂ Ò ÔÓÎÓ‚ËÌÌ˚Ï ¯‡„ÓÏ ‰Îˇ ÓˆÂÌÍË ÔÓ„Â¯ÌÓÒÚË
+					if (v > 1000) {
+						break;
+					}
+
+					// –í—ã—á–∏—Å–ª—è–µ–º —Ä–µ—à–µ–Ω–∏–µ —Å –ø–æ–ª–æ–≤–∏–Ω–Ω—ã–º —à–∞–≥–æ–º –¥–ª—è –æ—Ü–µ–Ω–∫–∏ –ø–æ–≥—Ä–µ—à–Ω–æ—Å—Ç–∏
 					double tmp = RK4_main1(x - h, v_half, h / 2);
 					v_half = RK4_main1(x - h + h / 2, tmp, h / 2);
 
 					double s = Math::Abs(v_half - v) / (a - 1);
 
-					dataGridView1->Rows[i]->Cells[5]->Value = h;
-					dataGridView1->Rows[i]->Cells[1]->Value = v;
-					dataGridView1->Rows[i]->Cells[2]->Value = v_half;
-					dataGridView1->Rows[i]->Cells[3]->Value = v - v_half;
-					dataGridView1->Rows[i]->Cells[4]->Value = s * a;
-					dataGridView1->Rows[i]->Cells[8]->Value = 0.0; // ÕÂÚ ÚÓ˜ÌÓ„Ó Â¯ÂÌËˇ
-					dataGridView1->Rows[i]->Cells[9]->Value = 0.0;
+					add_data_to_row(dataGridView1, i, x, v, v_half, v - v_half, s * a, h, 0, 0, 0.0, 0.0);
+					v_list->Add(x, v);
 
 					++i;
 				}
@@ -1528,62 +1359,66 @@ namespace Graph {
 				}
 
 				//results
-				textBox12->Text = L"Results for Main Task 1:";
+				textBox12->Text = L"–†–µ–∑—É–ª—å—Ç–∞—Ç—ã:";
 				textBox12->AppendText(String::Format("\r\nn = {0}", n));
 				textBox12->AppendText(String::Format("\r\nb - x_n = {0}", xmax - x_n));
-				textBox12->AppendText(String::Format("\r\nMax OLP = {0}", max_olp));
-				textBox12->AppendText("\r\nNo exact solution available for comparison");
-
-				zedGraphControl1->Invalidate();
+				textBox12->AppendText(String::Format("\r\n–ú–∞–∫—Å –û–õ–ü = {0}", max_olp));
+				textBox12->AppendText(String::Format("\r\n–ß–∏—Å–ª–æ –¥–µ–ª–µ–Ω–∏–π —à–∞–≥–∞ = {0}", 0));
+				textBox12->AppendText(String::Format("\r\n–ß–∏—Å–ª–æ —É–º–Ω–æ–∂–µ–Ω–∏–π —à–∞–≥–∞ = {0}", 0));
 			}
 		}
-		else if (radioButton3->Checked) // ŒÒÌÓ‚Ì‡ˇ Á‡‰‡˜‡ π2
+		else if (radioButton3->Checked) // –û—Å–Ω–æ–≤–Ω–∞—è –∑–∞–¥–∞—á–∞ ‚Ññ2
 		{
-			// œÓÎÛ˜‡ÂÏ Ô‡‡ÏÂÚ˚
+			// –ü–æ–ª—É—á–∞–µ–º –ø–∞—Ä–∞–º–µ—Ç—Ä—ã
 			double a_param = Convert::ToDouble(textBoxA->Text);
 			double b_param = Convert::ToDouble(textBoxB->Text);
 			double up0 = Convert::ToDouble(textBox10->Text);      // u'(0)
 
 			if (checkBox1->Checked)
 			{
-				// — ÍÓÌÚÓÎÂÏ ÔÓ„Â¯ÌÓÒÚË
-				dataGridView1->AllowUserToAddRows = false;
+				// –° –∫–æ–Ω—Ç—Ä–æ–ª–µ–º –ø–æ–≥—Ä–µ—à–Ω–æ—Å—Ç–∏
 				dataGridView1->Rows->Clear();
-				dataGridView1->Rows->Add();
-				dataGridView1->Rows[0]->Cells[0]->Value = Math::Round(x0, 3);
-				dataGridView1->Rows[0]->Cells[1]->Value = u0;      // v1 (u)
-				dataGridView1->Rows[0]->Cells[2]->Value = up0;     // v2 (u')
-				dataGridView1->Rows[0]->Cells[3]->Value = 0.0;
-				dataGridView1->Rows[0]->Cells[4]->Value = 0.0;
-				dataGridView1->Rows[0]->Cells[5]->Value = 0.0;
-				dataGridView1->Rows[0]->Cells[6]->Value = 0.0;
-				dataGridView1->Rows[0]->Cells[7]->Value = 0.0;
+				v1_list->Clear();
+				v2_list->Clear();
+				v1_v2_list->Clear();
+				add_data_to_row(dataGridView1, 0, x0, u0, up0, 0.0, 0.0, 0.0, 0, 0, 0.0, 0.0);
 
-				// Õ‡˜‡Î¸Ì˚Â ÁÌ‡˜ÂÌËˇ
+				// –ù–∞—á–∞–ª—å–Ω—ã–µ –∑–Ω–∞—á–µ–Ω–∏—è
 				double v1 = u0;   // u
 				double v2 = up0;  // u'
 				double v1_half = u0;
 				double v2_half = up0;
 
-				// —ÔËÒÓÍ ÚÓ˜ÂÍ
+				v1_list->Add(x0, u0);
+				v2_list->Add(x0, up0);
+				v1_v2_list->Add(u0, up0);
+
+				// –°–ø–∏—Å–æ–∫ —Ç–æ—á–µ–∫
 				double eps = Convert::ToDouble(textBox8->Text);
 				int i = 1;
 				int N = Convert::ToInt32(textBox9->Text);
 				int n = 1;
 				double a = Math::Pow(2, 4);
+
 				int count_c1 = 0; //div
 				int count_c2 = 0; //mult
 
-				double x = xmin + h;
+				double x = xmin;
+				double next_x = xmin + h;
 
-				while (x <= xmax + h / 1000.0 && n < N)
+				while (next_x <= xmax + h / 1000.0 && n < N)
 				{
-					// ¬˚˜ËÒÎˇÂÏ Ò ÔÓÎÌ˚Ï ¯‡„ÓÏ
+					if (h < 1e-7)
+					{
+						break;
+					}
+
+					// –í—ã—á–∏—Å–ª—è–µ–º —Å –ø–æ–ª–Ω—ã–º —à–∞–≥–æ–º
 					double v1_new = v1;
 					double v2_new = v2;
 					RK4_main2_system(x - h, v1_new, v2_new, h, a_param, b_param);
 
-					// ¬˚˜ËÒÎˇÂÏ Ò ‰‚ÛÏˇ ÔÓÎÓ‚ËÌÌ˚ÏË ¯‡„‡ÏË
+					// –í—ã—á–∏—Å–ª—è–µ–º —Å –¥–≤—É–º—è –ø–æ–ª–æ–≤–∏–Ω–Ω—ã–º–∏ —à–∞–≥–∞–º–∏
 					double v1_tmp = v1_half;
 					double v2_tmp = v2_half;
 					RK4_main2_system(x - h, v1_tmp, v2_tmp, h / 2, a_param, b_param);
@@ -1591,78 +1426,63 @@ namespace Graph {
 					double v2_half_new = v2_tmp;
 					RK4_main2_system(x - h + h / 2, v1_half_new, v2_half_new, h / 2, a_param, b_param);
 
-					// ŒˆÂÌÍ‡ ÔÓ„Â¯ÌÓÒÚË (Ï‡ÍÒËÏÛÏ ËÁ ‰‚Ûı ÍÓÏÔÓÌÂÌÚ)
+					// –û—Ü–µ–Ω–∫–∞ –ø–æ–≥—Ä–µ—à–Ω–æ—Å—Ç–∏ (–º–∞–∫—Å–∏–º—É–º –∏–∑ –¥–≤—É—Ö –∫–æ–º–ø–æ–Ω–µ–Ω—Ç)
 					double s1 = Math::Abs(v1_half_new - v1_new) / (a - 1);
 					double s2 = Math::Abs(v2_half_new - v2_new) / (a - 1);
 					double s = Math::Max(s1, s2);
 
 					if ((s >= (eps / Math::Pow(2, 5))) && (s <= eps))
 					{
-						// ÿ‡„ ÔËÌËÏ‡ÂÚÒˇ
+						// –®–∞–≥ –ø—Ä–∏–Ω–∏–º–∞–µ—Ç—Å—è
 						v1 = v1_new;
 						v2 = v2_new;
 						v1_half = v1_half_new;
 						v2_half = v2_half_new;
 
-						dataGridView1->Rows->Add();
-						dataGridView1->Rows[i]->Cells[0]->Value = Math::Round(x, 3);
-						dataGridView1->Rows[i]->Cells[1]->Value = v1;      // u(x)
-						dataGridView1->Rows[i]->Cells[2]->Value = v2;      // u'(x)
-						dataGridView1->Rows[i]->Cells[3]->Value = v1 - v1_half; // ‡ÁÌÓÒÚ¸ ‰Îˇ u
-						dataGridView1->Rows[i]->Cells[4]->Value = s * a;   // ŒÀœ
-						dataGridView1->Rows[i]->Cells[5]->Value = h;       // ¯‡„
-						dataGridView1->Rows[i]->Cells[6]->Value = 0.0;     // C1
-						dataGridView1->Rows[i]->Cells[7]->Value = 0.0;     // C2
+						add_data_to_row(dataGridView1, i, next_x, v1, v2, v1 - v1_half, s * a, h, 0, 0, 0.0, 0.0);
+						v1_list->Add(next_x, v1);
+						v2_list->Add(next_x, v2);
+						v1_v2_list->Add(v1, v2);
 
-						x += h;
+						x = next_x;
+						next_x = x + h;
+
 						n++;
 						i++;
 					}
 					else if (s < (eps / Math::Pow(2, 5)))
 					{
-						// ”‚ÂÎË˜Ë‚‡ÂÏ ¯‡„
+						// –£–≤–µ–ª–∏—á–∏–≤–∞–µ–º —à–∞–≥
 						v1 = v1_new;
 						v2 = v2_new;
 						v1_half = v1_half_new;
 						v2_half = v2_half_new;
 
-						dataGridView1->Rows->Add();
-						dataGridView1->Rows[i]->Cells[0]->Value = Math::Round(x, 3);
-						dataGridView1->Rows[i]->Cells[1]->Value = v1;
-						dataGridView1->Rows[i]->Cells[2]->Value = v2;
-						dataGridView1->Rows[i]->Cells[3]->Value = v1 - v1_half;
-						dataGridView1->Rows[i]->Cells[4]->Value = s * a;
-						dataGridView1->Rows[i]->Cells[5]->Value = h;
-						dataGridView1->Rows[i]->Cells[6]->Value = 0.0;
-						dataGridView1->Rows[i]->Cells[7]->Value = 1.0;
+						add_data_to_row(dataGridView1, i, next_x, v1, v2, v1 - v1_half, s * a, h, 0, 1, 0.0, 0.0);
+						v1_list->Add(next_x, v1);
+						v2_list->Add(next_x, v2);
+						v1_v2_list->Add(v1, v2);
 
+						x = next_x;
 						h *= 2;
+						next_x = x + h;
 						count_c2++;
-						x += h;
 						n++;
 						i++;
 					}
 					else if (s > eps)
 					{
-						// ”ÏÂÌ¸¯‡ÂÏ ¯‡„
-						dataGridView1->Rows->Add();
-						dataGridView1->Rows[i]->Cells[0]->Value = Math::Round(x, 3);
-						dataGridView1->Rows[i]->Cells[1]->Value = v1;
-						dataGridView1->Rows[i]->Cells[2]->Value = v2;
-						dataGridView1->Rows[i]->Cells[3]->Value = v1 - v1_half;
-						dataGridView1->Rows[i]->Cells[4]->Value = s * a;
-						dataGridView1->Rows[i]->Cells[5]->Value = h;
-						dataGridView1->Rows[i]->Cells[6]->Value = 1.0;
-						dataGridView1->Rows[i]->Cells[7]->Value = 0.0;
+						// –£–º–µ–Ω—å—à–∞–µ–º —à–∞–≥
+						add_data_to_row(dataGridView1, i, next_x, v1, v2, v1 - v1_half, s * a, h, 1, 0, 0.0, 0.0);
 
 						i++;
 						h /= 2;
+						next_x = x + h;
 						count_c1++;
-						continue;
 					}
 				}
 
-				// ¬˚˜ËÒÎÂÌËÂ ÒÚ‡ÚËÒÚËÍË
+				// –í—ã—á–∏—Å–ª–µ–Ω–∏–µ —Å—Ç–∞—Ç–∏—Å—Ç–∏–∫–∏
 				double x_n = 0;
 				DataGridViewCell^ lastCell = dataGridView1->Rows[dataGridView1->RowCount - 1]->Cells[0];
 				if (lastCell->Value != nullptr)
@@ -1701,40 +1521,36 @@ namespace Graph {
 					}
 				}
 
-				// ¬˚‚Ó‰ ÂÁÛÎ¸Ú‡ÚÓ‚
-				textBox12->Text = L"Results:";
+				// –í—ã–≤–æ–¥ —Ä–µ–∑—É–ª—å—Ç–∞—Ç–æ–≤
+				textBox12->Text = L"–†–µ–∑—É–ª—å—Ç–∞—Ç—ã:";
 				textBox12->AppendText(String::Format("\r\nn = {0}", n));
 				textBox12->AppendText(String::Format("\r\nb - x_n = {0}", xmax - x_n));
-				textBox12->AppendText(String::Format("\r\nMax OLP = {0}", max_olp));
-				textBox12->AppendText(String::Format("\r\nCount c1 = {0}", count_c1));
-				textBox12->AppendText(String::Format("\r\nCount c2 = {0}", count_c2));
-				textBox12->AppendText(String::Format("\r\nMax h_i = {0} in x = {1}", max_h, x_max_h));
-				textBox12->AppendText(String::Format("\r\nMin h_i = {0} in x = {1}", min_h, x_min_h));
-
-				// œÓÒÚÓÂÌËÂ „‡ÙËÍÓ‚ ·Û‰ÂÚ ÔÓ ÍÌÓÔÍÂ Draw
+				textBox12->AppendText(String::Format("\r\n–ú–∞–∫—Å –û–õ–ü = {0}", max_olp));
+				textBox12->AppendText(String::Format("\r\n–ß–∏—Å–ª–æ –¥–µ–ª–µ–Ω–∏–π —à–∞–≥–∞ = {0}", count_c1));
+				textBox12->AppendText(String::Format("\r\n–ß–∏—Å–ª–æ —É–º–Ω–æ–∂–µ–Ω–∏–π —à–∞–≥–∞ = {0}", count_c2));
+				textBox12->AppendText(String::Format("\r\n–ú–∞–∫—Å h_i = {0} –≤ x = {1}", max_h, Math::Round(x_max_h, 3)));
+				textBox12->AppendText(String::Format("\r\n–ú–∏–Ω h_i = {0} –≤ x = {1}", min_h, Math::Round(x_min_h, 3)));
 			}
 			else
 			{
-				// ¡ÂÁ ÍÓÌÚÓÎˇ ÔÓ„Â¯ÌÓÒÚË
-				dataGridView1->AllowUserToAddRows = false;
+				// –ë–µ–∑ –∫–æ–Ω—Ç—Ä–æ–ª—è –ø–æ–≥—Ä–µ—à–Ω–æ—Å—Ç–∏
 				dataGridView1->Rows->Clear();
-				dataGridView1->Rows->Add();
-				dataGridView1->Rows[0]->Cells[0]->Value = Math::Round(x0, 3);
-				dataGridView1->Rows[0]->Cells[1]->Value = u0;
-				dataGridView1->Rows[0]->Cells[2]->Value = up0;
-				dataGridView1->Rows[0]->Cells[3]->Value = 0.0;
-				dataGridView1->Rows[0]->Cells[4]->Value = 0.0;
-				dataGridView1->Rows[0]->Cells[5]->Value = 0.0;
-				dataGridView1->Rows[0]->Cells[6]->Value = 0.0;
-				dataGridView1->Rows[0]->Cells[7]->Value = 0.0;
+				v1_list->Clear();
+				v2_list->Clear();
+				v1_v2_list->Clear();
+				add_data_to_row(dataGridView1, 0, x0, u0, up0, 0.0, 0.0, 0.0, 0, 0, 0.0, 0.0);
 
-				// Õ‡˜‡Î¸Ì˚Â ÁÌ‡˜ÂÌËˇ
+				// –ù–∞—á–∞–ª—å–Ω—ã–µ –∑–Ω–∞—á–µ–Ω–∏—è
 				double v1 = u0;
 				double v2 = up0;
 				double v1_half = u0;
 				double v2_half = up0;
 
-				// —ÔËÒÓÍ ÚÓ˜ÂÍ
+				v1_list->Add(x0, u0);
+				v2_list->Add(x0, up0);
+				v1_v2_list->Add(u0, up0);
+
+				// –°–ø–∏—Å–æ–∫ —Ç–æ—á–µ–∫
 				int i = 1;
 				int N = Convert::ToInt32(textBox9->Text);
 				int n = 1;
@@ -1745,15 +1561,10 @@ namespace Graph {
 					if (n >= N) break;
 					n++;
 
-					dataGridView1->Rows->Add();
-					dataGridView1->Rows[i]->Cells[0]->Value = Math::Round(x, 3);
-					dataGridView1->Rows[i]->Cells[6]->Value = 0.0;
-					dataGridView1->Rows[i]->Cells[7]->Value = 0.0;
-
-					// ¬˚˜ËÒÎˇÂÏ Ò ÔÓÎÌ˚Ï ¯‡„ÓÏ
+					// –í—ã—á–∏—Å–ª—è–µ–º —Å –ø–æ–ª–Ω—ã–º —à–∞–≥–æ–º
 					RK4_main2_system(x - h, v1, v2, h, a_param, b_param);
 
-					// ¬˚˜ËÒÎˇÂÏ Ò ‰‚ÛÏˇ ÔÓÎÓ‚ËÌÌ˚ÏË ¯‡„‡ÏË
+					// –í—ã—á–∏—Å–ª—è–µ–º —Å –¥–≤—É–º—è –ø–æ–ª–æ–≤–∏–Ω–Ω—ã–º–∏ —à–∞–≥–∞–º–∏
 					double v1_tmp = v1_half;
 					double v2_tmp = v2_half;
 					RK4_main2_system(x - h, v1_tmp, v2_tmp, h / 2, a_param, b_param);
@@ -1761,16 +1572,15 @@ namespace Graph {
 					v2_half = v2_tmp;
 					RK4_main2_system(x - h + h / 2, v1_half, v2_half, h / 2, a_param, b_param);
 
-					// ŒˆÂÌÍ‡ ÔÓ„Â¯ÌÓÒÚË
+					// –û—Ü–µ–Ω–∫–∞ –ø–æ–≥—Ä–µ—à–Ω–æ—Å—Ç–∏
 					double s1 = Math::Abs(v1_half - v1) / (a - 1);
 					double s2 = Math::Abs(v2_half - v2) / (a - 1);
 					double s = Math::Max(s1, s2);
 
-					dataGridView1->Rows[i]->Cells[5]->Value = h;
-					dataGridView1->Rows[i]->Cells[1]->Value = v1;
-					dataGridView1->Rows[i]->Cells[2]->Value = v2;
-					dataGridView1->Rows[i]->Cells[3]->Value = v1 - v1_half;
-					dataGridView1->Rows[i]->Cells[4]->Value = s * a;
+					add_data_to_row(dataGridView1, i, x, v1, v2, v1 - v1_half, s * a, h, 0, 0, 0.0, 0.0);
+					v1_list->Add(x, v1);
+					v2_list->Add(x, v2);
+					v1_v2_list->Add(v1, v2);
 
 					i++;
 				}
@@ -1789,11 +1599,10 @@ namespace Graph {
 					if (m > max_olp) max_olp = m;
 				}
 
-				textBox12->Text = L"Results:";
+				textBox12->Text = L"–†–µ–∑—É–ª—å—Ç–∞—Ç—ã:";
 				textBox12->AppendText(String::Format("\r\nn = {0}", n));
 				textBox12->AppendText(String::Format("\r\nb - x_n = {0}", xmax - x_n));
-				textBox12->AppendText(String::Format("\r\nMax OLP = {0}", max_olp));
-
+				textBox12->AppendText(String::Format("\r\n–ú–∞–∫—Å –û–õ–ü = {0}", max_olp));
 			}
 		}
 	}
@@ -1804,7 +1613,7 @@ namespace Graph {
 		{
 			GraphPane^ panel = zedGraphControl1->GraphPane;
 			panel->CurveList->Clear();
-			panel->Title->Text = "Test Task";
+			panel->Title->Text = "–¢–µ—Å—Ç–æ–≤–æ–µ –∑–∞–¥–∞–Ω–∏–µ";
 			checkBox2->Enabled = true;
 
 			zedGraphControl1->Invalidate();
@@ -1818,7 +1627,7 @@ namespace Graph {
 			GraphPane^ panel = zedGraphControl1->GraphPane;
 			panel->CurveList->Clear();
 			dataGridView1->Rows->Clear();
-			panel->Title->Text = "Main Task 1";
+			panel->Title->Text = "–û—Å–Ω–æ–≤–Ω–æ–µ –∑–∞–¥–∞–Ω–∏–µ 1";
 			checkBox2->Enabled = false;
 
 			zedGraphControl1->Invalidate();
@@ -1832,14 +1641,16 @@ namespace Graph {
 			GraphPane^ panel = zedGraphControl1->GraphPane;
 			panel->CurveList->Clear();
 			dataGridView1->Rows->Clear();
-			panel->Title->Text = "Main Task 2";
+			panel->Title->Text = "–û—Å–Ω–æ–≤–Ω–æ–µ –∑–∞–¥–∞–Ω–∏–µ 2";
 			checkBox2->Enabled = false;
 
-			// œÓÍ‡Á˚‚‡ÂÏ Ô‡ÌÂÎ¸ ‰Îˇ Á‡‰‡˜Ë 2
+			// –ü–æ–∫–∞–∑—ã–≤–∞–µ–º –ø–∞–Ω–µ–ª—å –¥–ª—è –∑–∞–¥–∞—á–∏ 2
 			panelTask2->Visible = true;
 
 			zedGraphControl1->Invalidate();
 		}
 	}
-	};
+	private: System::Void label15_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+};
 }
